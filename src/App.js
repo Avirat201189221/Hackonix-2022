@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import About from './Components/About';
+import Events from './Components/Events';
+import Faq from './Components/Faq';
+import Footer from './Components/Footer';
+import Head from './Components/Head';
+import Prizes from './Components/Prizes';
+import SideNav from './Components/SideNav';
+import Sponsors from './Components/Sponsors';
 
-function App() {
+function App(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <SideNav></SideNav>
+      <Head></Head>
+      <About></About>
+      {/* <Events></Events> */}
+      {/* <Prizes></Prizes> */}
+      <Sponsors></Sponsors>
+      <Faq></Faq>
+      <Footer></Footer>
     </div>
   );
 }
