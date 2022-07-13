@@ -1,0 +1,70 @@
+/* Link Styles */
+
+a.heading-link:link {
+    text-decoration:none;;
+  }
+  
+  /* visited link */
+  a.heading-link:visited {
+    text-decoration:none;
+  }
+  
+  /* mouse over link */
+  a.heading-link:hover {
+    text-decoration:none;
+    color:azure;
+  }
+  
+  /* selected link */
+  a.heading-link:active {
+    text-decoration:none;
+  }
+  
+  .logo{
+    margin-left:20rem;
+  }
+  
+  /* Flexbox */
+  .heading-text{
+    margin-top:4rem;
+    /* flex properties */
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:space-around;
+    align-items:center;
+    
+  }
+  /* Flex Container-1 */
+  .sponsor-us-text-box{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:2rem;
+    /* flex-basis:50%; */
+    margin-left:20rem;
+    text-align: center;
+    border-style:solid;
+    border-width:0.75rem;
+    background-color: rgb(255,215,0);
+    border-color:linear-gradient(180deg, rgba(255,215,0,1) 0%, rgba(0,0,0,1) 88%);
+    border-radius:5rem;
+  }
+  /* Flex Container-2 */
+  .register-text-box{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:2rem;
+    /* flex-basis:50%; */
+    text-align: center;
+    border-style:solid;
+    border-width:0.75rem;
+    background-color: rgb(255,215,0);
+    border-color:linear-gradient(180deg, rgba(255,215,0,1) 0%, rgba(0,0,0,1) 88%);
+    border-radius:5rem;
+
+  }
+  .sponsor-us-text{
+    margin:7rem;
+  }
+  .register-text{
+    margin:7rem;
+  }
