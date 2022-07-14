@@ -1,0 +1,21 @@
+/* Link Styles */
+
+a.heading-link:link {
+    text-decoration:none;;
+  }
+  
+  /* visited link */
+  a.heading-link:visited {
+    text-decoration:none;
+  }
+  
+  /* mouse over link */
+  a.heading-link:hover {
+    text-decoration:none;
+    color:azure;
+  }
+  
+  /* selected link */
+  a.heading-link:active {
+    text-decoration:none;
+  }

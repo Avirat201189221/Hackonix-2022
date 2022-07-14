@@ -6,4 +6,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.index,name='indexpage'),
     path('register',views.register,name='registerpage'),
+    # path('register-success',views.success,name='registersuccess')
 ]

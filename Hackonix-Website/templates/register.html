@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Register For The Hackathon</h1>
+    <div class="form">
+      <form action="register" method="post">
+        {% csrf_token %}
+
+        <h3>Team Name</h3>
+        <input type="text" name="teamname" placeholder="Team Name"></input>
+        <h3>Leader's Name</h3>
+        <input type="text" name="leadername" placeholder="Leader's Name"></input>
+        <h3>Leader's Roll No.</h3>
+        <input type="number" name="leaderrollno" placeholder="Roll No."></input>
+        <h3>Leader's Email</h3>
+        <input type="email" name="leaderemail" placeholder="Leader's Email"></input>
+        <h3>Leader's Phone No.</h3>
+        <input type="number" name="leaderpno" placeholder="Phone Number"></input>
+
+
+        <h3>Teammate 1</h3>
+        <input type="text" name="teammate1name" placeholder="Name"></input>
+        <h3>Leader's Roll No.</h3>
+        <input type="number" name="teammate1rollno" placeholder="Roll No."></input>
+        <h3>Leader's Roll No.</h3>
+        <input type="email" name="teammate1email" placeholder="Email"></input>
+
+
+        <h3>Teammate 2</h3>
+        <input type="text" name="teammate2name" placeholder="Name"></input>
+        <h3>Leader's Roll No.</h3>
+        <input type="number" name="teammate2rollno" placeholder="Roll No."></input>
+        <h3>Leader's Roll No.</h3>
+        <input type="email" name="teammate2email" placeholder="Email"></input>
+
+
+        <h3>Teammate 3</h3>
+        <input type="text" name="teammate3name" placeholder="Name"></input>
+        <h3>Leader's Roll No.</h3>
+        <input type="number" name="teammate3rollno" placeholder="Roll No."></input>
+        <h3>Leader's Roll No.</h3>
+        <input type="email" name="teammate3email" placeholder="Email"></input>
+
+
+        <h3>Teammate 4</h3>
+        <input type="text" name="teammate4name" placeholder="Name"></input>
+        <h3>Leader's Roll No.</h3>
+        <input type="number" name="teammate4rollno" placeholder="Roll No."></input>
+        <h3>Leader's Roll No.</h3>
+        <input type="email" name="teammate4email" placeholder="Email"></input>
+
+        <input type="submit" id="submit" value="Submit"></input>
+
+
+      </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
