@@ -1,29 +1,7 @@
 from django import forms
+from app.models import HackathonTeam
 
-class NameForm(forms.Form):
-    team_name=forms.CharField(max_length=12)
-    # Team Leader
-    leader_name= forms.CharField(max_length=22, default="")
-    leader_roll_no=forms.CharField(max_length=9, default="")
-    leader_thapar_email=forms.EmailField(max_length=50, default="")
-    leader_phone_number=forms.CharField(max_length=10, default="")
-
-    # Teammate 1
-    teammate1_name= forms.CharField(max_length=22, default="")
-    teammate1_roll_no=forms.CharField(max_length=9, default="")
-    teammate1_thapar_email=forms.EmailField(max_length=50, default="")
-
-    # Teammate 2
-    teammate2_name= forms.CharField(max_length=22, default="")
-    teammate2_roll_no=forms.CharField(max_length=9, default="")
-    teammate2_thapar_email=forms.EmailField(max_length=50, default="")
-
-    # Teammate 3
-    teammate3_name= forms.CharField(max_length=22, default="")
-    teammate3_roll_no=forms.CharField(max_length=9, default="")
-    teammate3_thapar_email=forms.EmailField(max_length=50, default="")
-
-    # Teammate 4
-    teammate4_name= forms.CharField(max_length=22, default="")
-    teammate4_roll_no=forms.CharField(max_length=9, default="")
-    teammate4_thapar_email=forms.EmailField(max_length=50, default="")
+class  TeamForm(forms.ModelForm):
+    class Meta:
+        model=HackathonTeam
+        fields=['team_name','leader_name','leader_roll_no','leader_thapar_email','leader_phone_number','teammate1_name',"teammate1_roll_no","teammate1_thapar_email",'teammate2_name',"teammate2_roll_no","teammate2_thapar_email",'teammate3_name',"teammate3_roll_no","teammate3_thapar_email",'teammate4_name',"teammate4_roll_no","teammate4_thapar_email"]

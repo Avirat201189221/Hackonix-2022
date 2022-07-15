@@ -8,6 +8,14 @@
   </head>
   <body>
     <h1>Register For The Hackathon</h1>
+    <h2>
+      {% if messages%}
+        {% for message in messages%}
+          {{message}}
+        {% endfor %}
+      {% endif %}
+
+    </h2>
     <div class="form">
       <form action="register" method="post">
         {% csrf_token %}
