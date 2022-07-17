@@ -58,11 +58,11 @@ ul li {
 
 a {
 	text-decoration: none;
-	color: azure;
+	color: rgb(0, 0, 0);
 }
 
 .panel-body a, .mu-register-area a {
-    color: azure;
+    color: black;
 }
 
 .mu-register-area p {
@@ -70,7 +70,9 @@ a {
     margin-bottom: 20px;
 }
 
-a:hover,
+a:hover{
+	color:#000000;
+}
 a:focus {
 	outline: none;
 	text-decoration: none;
@@ -427,7 +429,7 @@ button:focus {
 
 
 #mu-about {
-	background: linear-gradient(159deg, rgb(0, 0, 0) 0%, rgb(237, 226, 144) 20%, rgb(193, 166, 89) 40%, rgb(148, 123, 59) 60%, rgb(0, 0, 0) 100%);
+	background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(237, 226, 144) 20%, rgb(193, 166, 89) 40%, rgb(148, 123, 59) 60%, rgb(0, 0, 0) 100%);
 	display: inline;
 	float: left;
 	width: 100%;
@@ -594,7 +596,7 @@ button:focus {
 /*--------------------*/
 
 #mu-schedule {
-	background: linear-gradient(159deg, rgb(0, 0, 0) 0%, rgb(237, 226, 144) 20%, rgb(193, 166, 89) 40%, rgb(148, 123, 59) 60%, rgb(0, 0, 0) 100%);
+	background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(237, 226, 144) 20%, rgb(193, 166, 89) 40%, rgb(148, 123, 59) 60%, rgb(0, 0, 0) 100%);
 	display: inline;
 	float: left;
 	width: 100%;

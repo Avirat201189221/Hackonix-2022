@@ -65,8 +65,9 @@
                     <!--<li><a href="#mu-sponsors">Sponsors</a></li>-->
                     <li><a href="#mu-contact">Contact</a></li>
                 </ul>
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
+            </div> <!-- /.navbar-collapse -->
+          </div> <!-- /.container-fluid -->
+        </div>
       </nav>
       <!-- End menu -->
   
@@ -82,7 +83,7 @@
                 <!--<a class="mu-logo" href="#">Eventoz</a>-->
                 <!-- image based logo -->
                 <a class="mu-logo" href="#"><img src="{%static 'images/Hackonix-logo-text.png' %}" alt="logo img"></a>
-                              {% comment %} <a class="mu-logo" href="#"><img src="assets/images/mit.png" alt="logo img"></a> {% endcomment %}
+                <a class="mu-logo" href="#"><img src="assets/images/mit.png" alt=""></a>
               </div>
               <!-- End center Logo -->
   
@@ -101,7 +102,6 @@
             <!-- End hero featured area -->
   
           </div>
-        </div>
       </div>
     </header>
     <!-- End Header -->
@@ -118,7 +118,7 @@
                 <div class="row">
                   <div class="col-md-6">
                     <div class="mu-about-left">
-                      <img class="" src="assets/images/hackathon-people.jpg" alt="People hacking">
+                      {% comment %} <img class="" src="{%static 'images/istelogo.png' %}" alt="People hacking"> {% endcomment %}
                     </div>
                   </div>
                   <div class="col-md-6">
@@ -437,9 +437,8 @@
             <div class="col-md-6">
               <div class="mu-venue-address">
                 <h2>VENUE <i class="fa fa-chevron-right" aria-hidden="true"></i></h2>
-                <h3>UCL (Various Locations)</h3>
+                <h3>Venue Building</h3>
                 <h4>Gower Street, London, WC1E 6BT</h4>
-                <p>The precise location will have been emailed to successful applicants.</p>
               </div>
             </div>
   
@@ -660,7 +659,7 @@
             </div>
           </div>
         </div>
-      </section>-->
+      </section>
       <!-- End Pricing -->
   
           <!-- Start FAQ -->
@@ -935,6 +934,7 @@
         <!-- Ajax contact form  -->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.1/demo/js/custom.js"></script>
         <!-- Custom js -->
-      <script type="text/javascript" src="{{url_for('static',filename='js/app.js')}"></script>
+      {% comment %} <script type="text/javascript" src="{{ url_for('static',filename='js/app.js') }}"></script> {% endcomment %}
+      <script type="text/javascript" src="{%static 'js/app.js'%}"></script>
   </body>
 </html>
