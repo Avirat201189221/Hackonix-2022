@@ -289,15 +289,18 @@ button:focus {
 
 .mu-logo img {
     width: 100%;
-    max-width: 800px;
+    max-width: 1000px;
     height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5rem;
-    margin-bottom: 20px;
 }
-
+img{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
 
 .mu-menu-btn {
 	position: fixed;
@@ -352,12 +355,14 @@ button:focus {
 }
 
 .mu-event-date-line {
-	background-color: #fff;
-	color: #333;
-	padding: 5px 10px;
+	background-color:rgb(148, 123, 59);
+	color: azure;
+	padding: 1rem 3rem;
 	display: inline-block;
 	margin-top: 10px;
 	font-weight: 600;
+	border-radius: 2rem;
+	font-size:1.25rem ;
 }
 
 .mu-event-counter-area {
@@ -445,7 +450,8 @@ button:focus {
 
 
 #mu-about {
-	background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(148, 123, 59) 20%, rgb(193, 166, 89) 40%, rgb(148, 123, 59) 60%, rgb(0, 0, 0) 100%);
+	/* background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(148, 123, 59) 20%, rgb(193, 166, 89) 40%, rgb(148, 123, 59) 60%, rgb(0, 0, 0) 100%); */
+	background: black;
 	display: inline;
 	float: left;
 	width: 100%;
@@ -457,7 +463,10 @@ button:focus {
 	padding: 100px 0;
 	width: 100%;
 }
-
+.mu-about-area .row{
+	background:linear-gradient(180deg, rgb(148, 123, 59) 0%, rgb(148, 123, 59) 20%, rgb(193, 166, 89) 40%, rgb(148, 123, 59) 60%, rgb(0, 0, 0) 100%);
+	border-radius: 1rem;
+}
 .mu-title-area {
 	display: inline;
 	float: left;
@@ -482,7 +491,7 @@ button:focus {
 }
 
 .mu-about-left img{
-	margin:1.5rem;
+	margin:3rem 1.5rem 1.5rem 1.5rem;
 }
 
 .mu-about-right {
@@ -490,7 +499,7 @@ button:focus {
 	float: left;
 	margin-top: 2rem;
 	width: 100%;
-	background:linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(205,197,197,0.5) 100%);
+	/* background:linear-gradient(180deg, rgb(148, 123, 59) 0%, rgb(148, 123, 59) 20%, rgb(193, 166, 89) 40%, rgb(148, 123, 59) 60%, rgb(0, 0, 0) 100%); */
 	border-radius:1rem;
 }
 
@@ -1117,7 +1126,7 @@ button:focus {
 /*--------------------*/
 
 #mu-sponsors {
-	background-color: #000000;
+	background:black;
 	display: inline;
 	float: left;
 	width: 100%;
@@ -1146,6 +1155,17 @@ button:focus {
 	width: 100%;
 }
 
+/* Rulebook */
+#rulebook{
+	background: #000000;
+}
+/* end */
+
+
+/* Prizes */
+.mu-prizes-area{
+	background: black;
+}
 
 /*--------------------*/
 /* FAQ */
@@ -1834,7 +1854,7 @@ button:focus {
 
 	.mu-about-left img{
 		height:300px;
-		margin:3rem;
+		margin-left:10rem;
 	}
 }
 
