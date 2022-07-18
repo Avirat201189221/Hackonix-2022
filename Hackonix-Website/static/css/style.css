@@ -89,7 +89,23 @@ h6 {
 	margin-top: 0;
 }
 
+.navbar{
+	position: fixed;
+	width:100%;
 
+}
+.navbar-brand{
+	font-size:2rem;
+}
+.nav-link{
+	font-size:1.5rem;
+	margin: 1rem;
+}
+.nav-link:hover{
+	border-style: none;
+	border-radius: 1rem;
+	background-color: azure;
+}
 h1 {
 	font-size: 38px;
 }
@@ -252,7 +268,7 @@ button:focus {
 }
 
 .mu-logo-area {
-    display: grid;
+    /* display: grid; */
     grid-template-columns: 1fr 1fr;
 	float: left;
 	text-align: center;
@@ -273,12 +289,12 @@ button:focus {
 
 .mu-logo img {
     width: 100%;
-    max-width: 500px;
+    max-width: 800px;
     height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
+    margin-top: 5rem;
     margin-bottom: 20px;
 }
 
@@ -429,7 +445,7 @@ button:focus {
 
 
 #mu-about {
-	background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(237, 226, 144) 20%, rgb(193, 166, 89) 40%, rgb(148, 123, 59) 60%, rgb(0, 0, 0) 100%);
+	background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(148, 123, 59) 20%, rgb(193, 166, 89) 40%, rgb(148, 123, 59) 60%, rgb(0, 0, 0) 100%);
 	display: inline;
 	float: left;
 	width: 100%;
@@ -462,16 +478,29 @@ button:focus {
 	display: inline;
 	float: left;
 	width: 100%;
+	align-items: center;
+}
+
+.mu-about-left img{
+	margin:1.5rem;
 }
 
 .mu-about-right {
 	display: inline;
 	float: left;
-	margin-top: 30px;
+	margin-top: 2rem;
 	width: 100%;
+	background:linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(205,197,197,0.5) 100%);
+	border-radius:1rem;
 }
 
+.about-header{
+	margin:3rem 0rem 1rem 0rem;
+}
 
+.about-text{
+	margin:2.5rem;
+}
 
 /*--------------------*/
 /* VIDEO */
@@ -596,7 +625,7 @@ button:focus {
 /*--------------------*/
 
 #mu-schedule {
-	background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(237, 226, 144) 20%, rgb(193, 166, 89) 40%, rgb(148, 123, 59) 60%, rgb(0, 0, 0) 100%);
+	background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(148, 123, 59)  20%, rgb(193, 166, 89) 40%, rgb(148, 123, 59) 60%, rgb(0, 0, 0) 100%);
 	display: inline;
 	float: left;
 	width: 100%;
@@ -1562,7 +1591,6 @@ button:focus {
 
 
 @media (max-width: 640px){
-
 	.mu-event-counter-block {
 		height: 100px;
 		width: 100px;
@@ -1800,4 +1828,30 @@ button:focus {
 
 
 
+}
+
+@media screen and (min-width:800px){
+
+	.mu-about-left img{
+		height:300px;
+		margin:3rem;
+	}
+}
+
+@media screen and (max-width: 450px){
+	.mu-about-left img{
+		margin-left:4.5rem;
+	}
+}
+
+@media screen and (max-width: 380px){
+	.mu-about-left img{
+		margin-left:3rem;
+	}
+}
+
+@media screen and (max-width: 330px){
+	.mu-about-left img{
+		margin-left:1.5rem;
+	}
 }
