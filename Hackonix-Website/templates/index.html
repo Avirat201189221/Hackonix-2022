@@ -30,13 +30,16 @@
         <!-- Main Style -->
         <link href="{%static 'css/style.css' %}" rel="stylesheet">
 
+        {% comment %} Timeline Style {% endcomment %}
+        <link href="{%static 'css/timeline-styles.css' %}" rel="stylesheet">
+
 
   </head>
   <body>
   	<!-- Start Header -->
     <header id="mu-hero" class="" role="banner">
       <!-- Start menu  -->
-      <nav class="navbar navbar-expand-lg bg-light">
+      <nav class="navbar navbar-expand-lg bg-light mr-auto" >
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Hackonix</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,14 +47,14 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="top#">Home</a>
               <a class="nav-link" href="#mu-about">About Us</a>
-              <a class="nav-link" href="#">Our Sponsors</a>
-              <a class="nav-link" href="#">Rulebook</a>
-              <a class="nav-link" href="#">Prizes</a>
-              <a class="nav-link" href="#">Timeline</a>
-              <a class="nav-link" href="#">FAQ</a>
-              <a class="nav-link" href="#">Contact Us</a>
+              <a class="nav-link" href="#mu-sponsors">Our Sponsors</a>
+              <a class="nav-link" href="#mu-rb">Rulebook</a>
+              <a class="nav-link" href="#mu-prizes">Prizes</a>
+              <a class="nav-link" href="#mu-schedule">Timeline</a>
+              <a class="nav-link" href="#mu-faq">FAQ</a>
+              <a class="nav-link" href="#mu-contact">Contact Us</a>
             </div>
           </div>
         </div>
@@ -230,7 +233,7 @@
       {% comment %} End {% endcomment %}
 
       {% comment %} Start Rulebook {% endcomment %}
-      <section id="mu-rulebook">
+      <section id="mu-rb">
         <center><h1>Rulebook</h1></center>
       </section>
       {% comment %} End {% endcomment %}
@@ -244,184 +247,33 @@
       {% comment %} End {% endcomment %}
 
       <!-- Start Schedule  -->
-      <section id="mu-schedule">
-        <div class="container">
-          <div class="row">
-            <div class="colo-md-12">
-              <div class="mu-schedule-area">
-  
-                <div class="mu-title-area">
-                  <h2 class="mu-title">Schedule Detail</h2>
-                  <p>The precise timings of the weekend are yet to be finalised and are subject to change. This is what we currently anticipate the weekend to look like.</p>
-                </div>
-  
-                <div class="mu-schedule-content-area">
-                  <!-- Nav tabs -->
-                  <ul class="nav nav-tabs mu-schedule-menu" role="tablist">
-                      <li role="presentation" class="active"><a href="#first-day" aria-controls="first-day" role="tab" data-toggle="tab">Saturday 26 Jan</a></li>
-                      <li role="presentation"><a href="#second-day" aria-controls="second-day" role="tab" data-toggle="tab">Sunday 27 Jan</a></li>
-  
-                  </ul>
-  
-                  <!-- Tab panes -->
-                  <div class="tab-content mu-schedule-content">
-                      <div role="tabpanel" class="tab-pane fade mu-event-timeline in active" id="first-day">
-                        <ul>
-                          <li>
-                            <div class="mu-single-event">
-                              <p class="mu-event-time">8.00 AM</p>
-                              <h3>Registration</h3>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="mu-single-event">
-                              <!--<img src="assets/images/speaker-1.jpg" alt="event speaker">-->
-                              <p class="mu-event-time">8.30 AM</p>
-                              <h3>Welcome Talk</h3>
-                              <span>By Inshal Imtiaz, President</span>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="mu-single-event">
-                              <p class="mu-event-time">8.40 AM</p>
-                              <h3>Keynote Speeches</h3>
-                              <span>TBA</span>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="mu-single-event">
-                              <p class="mu-event-time">9.00 AM</p>
-                              <h3>Hackathon Rules</h3>
-                              <span>TBA</span>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="mu-single-event">
-                              <p class="mu-event-time">9.30 AM</p>
-                              <h3>Problem Pitching</h3>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="mu-single-event">
-                              <p class="mu-event-time">10.10 AM</p>
-                              <h3>Networking and Discussion</h3>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="mu-single-event">
-                              <p class="mu-event-time">10.50 AM</p>
-                              <h3>Solution Pitching</h3>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="mu-single-event">
-                              <p class="mu-event-time">11.30 AM</p>
-                              <h3>Final Team Formation</h3>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="mu-single-event">
-                              <p class="mu-event-time">11.40 AM</p>
-                              <h3>Team Registration</h3>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="mu-single-event">
-                              <p class="mu-event-time">12.00 PM</p>
-                              <h3>Hacking</h3>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="mu-single-event">
-                              <p class="mu-event-time">1.00 PM</p>
-                              <h3>Lunch/Coffee</h3>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="mu-single-event">
-                              <p class="mu-event-time">1.40 PM</p>
-                              <h3>Mentorship</h3>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="mu-single-event">
-                              <p class="mu-event-time">6.00 PM</p>
-                              <h3>Wrapping Up</h3>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-                      <div role="tabpanel" class="tab-pane fade mu-event-timeline" id="second-day">
-                                          <ul>
-                          <li>
-                            <div class="mu-single-event">
-                              <p class="mu-event-time">8.00 AM</p>
-                              <h3>Registration</h3>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="mu-single-event">
-                              <!--<img src="assets/images/speaker-1.jpg" alt="event speaker">-->
-                              <p class="mu-event-time">8.30 AM</p>
-                              <h3>Welcome Talk - Day Two</h3>
-                              <span>By Inshal Imtiaz, President</span>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="mu-single-event">
-                              <p class="mu-event-time">8.40 AM</p>
-                              <h3>Hacking</h3>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="mu-single-event">
-                              <p class="mu-event-time">10.00 AM</p>
-                              <h3>Practice Pitching</h3>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="mu-single-event">
-                              <p class="mu-event-time">12.30 PM</p>
-                              <h3>Lunch/Coffee</h3>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="mu-single-event">
-                              <p class="mu-event-time">1.30 PM</p>
-                              <h3>Mentorship</h3>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="mu-single-event">
-                              <p class="mu-event-time">3.00 PM</p>
-                              <h3>Final Presentation</h3>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="mu-single-event">
-                              <p class="mu-event-time">3.00 PM</p>
-                              <h3>Prize Presentations</h3>
-                            </div>
-                          </li>
-                                              <li>
-                            <div class="mu-single-event">
-                              <p class="mu-event-time">6.00 PM</p>
-                              <h3>Wrapping Up</h3>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-  
-  
-                  </div>
-  
-                </div>
-  
-              </div>
+      <section class="timeline">
+      <div class="timeline-container">
+      <span class="timeline-header">Timeline</span>
+        <ul>
+          <li>
+            <div>
+              <time>Round 1</time><strong>8th - 11th (6:00pm)</strong><br>Team Registrations
             </div>
-          </div>
-        </div>
-      </section>
+          </li>
+          <li>
+            <div>
+              <time>Round 2</time><strong>12th March</strong><br>Workshop on Entrepreneurship, pitch deck and elevator pitch
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>Round 3</time><strong>13th March</strong><br>Elevator pitch by participants and pitch deck making and submission
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>Round 4</time><strong>13th March</strong><br>Investor pitch along with QNA
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
       <!-- End Schedule -->
   
           <!-- Start Venue -->
@@ -579,90 +431,8 @@
         </div>
       </section>-->
       <!-- End Speakers -->
-  
-      <!-- Start Pricing  -->
-      <!--<section id="mu-pricing">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="mu-pricing-area">
-  
-                <div class="mu-title-area">
-                  <h2 class="mu-title">Pricing plans</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis unde, ut sapiente et voluptatum facilis consectetur incidunt provident asperiores at necessitatibus nulla sequi voluptas libero quasi explicabo veritatis minima porro.</p>
-                </div>
-  
-                <div class="mu-pricing-conten">
-                  <div class="row">
-  
-  
-                    <div class="col-md-4">
-                      <div class="mu-single-price">
-  
-                        <div class="mu-single-price-head">
-                          <span class="mu-currency">$</span>
-                          <span class="mu-rate">12</span>
-                          <span class="mu-time">/all days</span>
-                        </div>
-                        <h3 class="mu-price-title">BASIC</h3>
-                        <ul>
-                          <li>Basic Class Ticket</li>
-                          <li>Access to all sessions</li>
-                          <li>Free Breakfast</li>
-                        </ul>
-                        <a class="mu-register-btn" href="#"> Register Now</a>
-                      </div>
-                    </div>
-  
-  
-  
-                    <div class="col-md-4">
-                      <div class="mu-single-price mu-popular-price">
-                        <span class="mu-price-tag">Popular</span>
-                        <div class="mu-single-price-head">
-                          <span class="mu-currency">$</span>
-                          <span class="mu-rate">22</span>
-                          <span class="mu-time">/all days</span>
-                        </div>
-                        <h3 class="mu-price-title">STANDARD</h3>
-                        <ul>
-                          <li>Basic Class Ticket</li>
-                          <li>Access to all sessions</li>
-                          <li>Free Breakfast</li>
-                        </ul>
-                        <a class="mu-register-btn" href="#"> Register Now</a>
-                      </div>
-                    </div>
-  
-                    <div class="col-md-4">
-                      <div class="mu-single-price">
-  
-                        <div class="mu-single-price-head">
-                          <span class="mu-currency">$</span>
-                          <span class="mu-rate">45</span>
-                          <span class="mu-time">/all days</span>
-                        </div>
-                        <h3 class="mu-price-title">PREMIUM</h3>
-                        <ul>
-                          <li>Basic Class Ticket</li>
-                          <li>Access to all sessions</li>
-                          <li>Free Breakfast</li>
-                        </ul>
-                        <a class="mu-register-btn" href="#"> Register Now</a>
-                      </div>
-                    </div>
-  
-  
-                  </div>
-                </div>
-  
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Pricing -->
-  
+      
+      
           <!-- Start FAQ -->
       <section id="mu-faq">
         <div class="container">
@@ -838,11 +608,11 @@
    {% endcomment %}
   
   
-              </div>
+              {% comment %} </div>
             </div>
           </div>
         </div>
-      </section>
+      </section> {% endcomment %}
       <!-- End Register -->
   
   
@@ -858,7 +628,7 @@
   
                 <div class="mu-title-area">
                   <h2 class="mu-heading-title">Contact Us</h2>
-                  <p>If you'd like to get in touch with us, send us your message using this form.</p>
+                  <p>Insert Message Here</p>
                 </div>
   
                 <!-- Start Contact Content -->
@@ -868,18 +638,6 @@
                   <div class="col-md-12">
                     <div class="mu-contact-form-area">
                       <div id="form-messages"></div>
-                        <form id="ajax-contact" method="post" action="/mail/" class="mu-contact-form">
-                          <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Name" id="name" name="name" required>
-                          </div>
-                          <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Enter Email" id="email" name="email" required>
-                          </div>
-                          <div class="form-group">
-                            <textarea class="form-control" placeholder="Message" id="message" name="message" required></textarea>
-                          </div>
-                          <button type="submit" class="mu-send-msg-btn"><span>SUBMIT</span></button>
-                              </form>
                       </div>
                     </div>
                   </div>
@@ -937,5 +695,6 @@
         <!-- Custom js -->
       {% comment %} <script type="text/javascript" src="{{ url_for('static',filename='js/app.js') }}"></script> {% endcomment %}
       <script type="text/javascript" src="{%static 'js/app.js'%}"></script>
+      <script type="text/javascript" src="{%static 'js/timeline-script.js'%}"></script>
   </body>
 </html>
