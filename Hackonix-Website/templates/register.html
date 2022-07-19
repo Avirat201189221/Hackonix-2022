@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="{% static 'css/ashfall-animation.css' %}" rel="stylesheet">
+    <link href="{% static 'css/register-styles.css' %}" rel="stylesheet">
   </head>
   <body>
         {% comment %} Background Ashfall Animation {% endcomment %}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/88/three.min.js"></script>
+    {% comment %} <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/88/three.min.js"></script>
     <script id="vertexShader" type="x-shader/x-vertex">
         void main() {
             gl_Position = vec4( position, 1.0 );
@@ -327,8 +328,9 @@
 
             gl_FragColor = vec4(clamp(colour * 20., 0., 1.),1.0);
         }
-      </script>
+      </script> {% endcomment %}
       {% comment %} Animation End {% endcomment %}
+    <div class="container-page">
     <h1>Register For The Hackathon</h1>
     <h2>
       {% if messages%}
@@ -341,53 +343,70 @@
     <div class="form">
       <form action="register" method="post">
         {% csrf_token %}
+          <div class="leader">
+            <h3>Team Name</h3>
+            <input type="text" name="teamname" placeholder="Team Name"></input>
+            <h3>Leader's Name</h3>
+            <input type="text" name="leadername" placeholder="Leader's Name"></input>
+            <h3>Leader's Roll No.</h3>
+            <input type="number" name="leaderrollno" placeholder="Roll No."></input>
+            <h3>Leader's Email</h3>
+            <input type="email" name="leaderemail" placeholder="Leader's Email"></input>
+            <h3>Leader's Phone No.</h3>
+            <input type="number" name="leaderpno" placeholder="Phone Number"></input>
+          </div>
+        
+        <div class="form-body">
 
-        <h3>Team Name</h3>
-        <input type="text" name="teamname" placeholder="Team Name"></input>
-        <h3>Leader's Name</h3>
-        <input type="text" name="leadername" placeholder="Leader's Name"></input>
-        <h3>Leader's Roll No.</h3>
-        <input type="number" name="leaderrollno" placeholder="Roll No."></input>
-        <h3>Leader's Email</h3>
-        <input type="email" name="leaderemail" placeholder="Leader's Email"></input>
-        <h3>Leader's Phone No.</h3>
-        <input type="number" name="leaderpno" placeholder="Phone Number"></input>
+          <div class="teammate">
+            <h3>Teammate 1</h3>
+            <h3>Name</h3>
+            <input type="text" name="teammate1name" placeholder="Name"></input>
+            <h3>Roll No.</h3>
+            <input type="number" name="teammate1rollno" placeholder="Roll No."></input>
+            <h3>Email</h3>
+            <input type="email" name="teammate1email" placeholder="Email"></input>
+          </div>
 
+          <hr>
 
-        <h3>Teammate 1</h3>
-        <input type="text" name="teammate1name" placeholder="Name"></input>
-        <h3>Leader's Roll No.</h3>
-        <input type="number" name="teammate1rollno" placeholder="Roll No."></input>
-        <h3>Leader's Roll No.</h3>
-        <input type="email" name="teammate1email" placeholder="Email"></input>
+          <div class="teammate">
+            <h3>Teammate 2</h3>
+            <h3>Name</h3>
+            <input type="text" name="teammate2name" placeholder="Name"></input>
+            <h3>Roll No.</h3>
+            <input type="number" name="teammate2rollno" placeholder="Roll No."></input>
+            <h3>Email</h3>
+            <input type="email" name="teammate2email" placeholder="Email"></input>
+          </div>
 
+          <hr>
 
-        <h3>Teammate 2</h3>
-        <input type="text" name="teammate2name" placeholder="Name"></input>
-        <h3>Leader's Roll No.</h3>
-        <input type="number" name="teammate2rollno" placeholder="Roll No."></input>
-        <h3>Leader's Roll No.</h3>
-        <input type="email" name="teammate2email" placeholder="Email"></input>
+          <div class="teammate">
+            <h3>Teammate 3</h3>
+            <h3>Name</h3>
+            <input type="text" name="teammate3name" placeholder="Name"></input>
+            <h3>Roll No.</h3>
+            <input type="number" name="teammate3rollno" placeholder="Roll No."></input>
+            <h3>Email</h3>
+            <input type="email" name="teammate3email" placeholder="Email"></input>
+          </div>
+          <hr>
+          <div class="teammate">
+            <h3>Teammate 4</h3>
+            <h3>Name</h3>
+            <input type="text" name="teammate4name" placeholder="Name"></input>
+            <h3>Roll No.</h3>
+            <input type="number" name="teammate4rollno" placeholder="Roll No."></input>
+            <h3>Email</h3>
+            <input type="email" name="teammate4email" placeholder="Email"></input>
+          </div>
 
+          <div class="submit">
+            <input type="submit" id="submit" value="Submit"></input>
+          </div>
 
-        <h3>Teammate 3</h3>
-        <input type="text" name="teammate3name" placeholder="Name"></input>
-        <h3>Leader's Roll No.</h3>
-        <input type="number" name="teammate3rollno" placeholder="Roll No."></input>
-        <h3>Leader's Roll No.</h3>
-        <input type="email" name="teammate3email" placeholder="Email"></input>
-
-
-        <h3>Teammate 4</h3>
-        <input type="text" name="teammate4name" placeholder="Name"></input>
-        <h3>Leader's Roll No.</h3>
-        <input type="number" name="teammate4rollno" placeholder="Roll No."></input>
-        <h3>Leader's Roll No.</h3>
-        <input type="email" name="teammate4email" placeholder="Email"></input>
-
-        <input type="submit" id="submit" value="Submit"></input>
-
-
+        </div>
       </form>
     </div>
   </div>

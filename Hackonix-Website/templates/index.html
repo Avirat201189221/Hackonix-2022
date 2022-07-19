@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
      <!-- Font Awesome -->
      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
  
@@ -33,13 +34,16 @@
         {% comment %} Timeline Style {% endcomment %}
         <link href="{%static 'css/timeline-styles.css' %}" rel="stylesheet">
 
+        {% comment %} Track Styles {% endcomment %}
+        <link href="{%static 'css/tracks-styles.css' %}" rel="stylesheet">
+
 
   </head>
   <body>
   	<!-- Start Header -->
     <header id="mu-hero" class="" role="banner">
       <!-- Start menu  -->
-      <nav class="navbar navbar-expand-lg bg-light mr-auto" >
+      <nav class="navbar navbar-expand-lg me-auto" >
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Hackonix</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,8 +51,8 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="top#">Home</a>
               <a class="nav-link" href="#mu-about">About Us</a>
+              {% comment %} <a class="nav-link" href="#mu-tracks">tracks</a> {% endcomment %}
               <a class="nav-link" href="#mu-sponsors">Our Sponsors</a>
               <a class="nav-link" href="#mu-rb">Rulebook</a>
               <a class="nav-link" href="#mu-prizes">Prizes</a>
@@ -67,6 +71,7 @@
   
             <!-- Start hero featured area -->
             <div class="mu-hero-featured-area">
+              <br><br><br><br><br>
               <!-- Start center Logo -->
               <div class="mu-logo-area">
                 <!-- text based logo -->
@@ -79,6 +84,9 @@
               <div class="mu-hero-featured-content">
                 <h2>Website Tagline</h2>
                 <p class="mu-event-date-line">27-28 August 2022</p>
+              <div class="mu-hero-register-button">
+                <button><a href="register"><p class="mu-event-register-button">Register For Hackonix</p></a></button>
+              </div>
   
                 <div class="mu-event-counter-area">
                   <div id="mu-event-counter">
@@ -112,25 +120,38 @@
                   </div>
                   <div class="col-md-6">
                     <div class="mu-about-right">
-                      <center><h2 class="about-header">The Hackathon</h2></center>
+                      <center><h2 class="about-header">About Us</h2></center>
                                           <p class="about-text">Join us on the last weekend in January for the UCL MedTech Society's annual Hackathon. This year we are excited to announce that the event will be held in collaboration with MIT Hacking Medicine.</p>
   
                                           <p class="about-text">Over the course of one exciting weekend, people from a range of disciplines will come together in teams to try and solve a real world medical problem.</p>
   
   
   
-                                          <p class="about-text">Prizes to be announced soon!</p>
+                                          <p class="about-text">Prizes to be announced soon! Lorem ipsum dolor </p>
                     </div>
                   </div>
                 </div>
                 <!-- End Feature Content -->
-  
               </div>
             </div>
           </div>
         </div>
       </section>
       <!-- End About -->
+
+      {% comment %} tracks
+      <section id="mu-tracks">
+        <div class="mu-tracks-heading">
+          <center><h1>Tracks</h1></center>
+        </div>
+        <div class="cards">
+          <div class="wrapper" data-aos="zoom-in-left"><i class="fas fa-link"></i><br><div style="font-size: 15px;">FIN-TECH</div></div>
+          <div class="wrapper" data-aos="zoom-in-up"><i class="fas fa-lightbulb "></i> <div style="font-size: 15px;">OPEN INNOVATION</div></div>
+          <div class="wrapper" data-aos="zoom-in-up"><i class="fas fa-graduation-cap"></i> <div style="font-size: 15px;">EDUCATION</div></div>
+          <div class="wrapper" data-aos="zoom-in-right"><i class="fas fa-briefcase-medical"></i> <div style="font-size: 15px;">HEALTH</div></div>
+        </div>
+      </section> {% endcomment %}
+      {% comment %} end {% endcomment %}
 
       {% comment %} Start Sponsors {% endcomment %}
       <section id="mu-sponsors">
@@ -249,7 +270,7 @@
       <!-- Start Schedule  -->
       <section class="timeline">
       <div class="timeline-container">
-      <span class="timeline-header">Timeline</span>
+      <center><span class="timeline-header">Timeline</span></center>
         <ul>
           <li>
             <div>
@@ -269,6 +290,16 @@
           <li>
             <div>
               <time>Round 4</time><strong>13th March</strong><br>Investor pitch along with QNA
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>Round 1</time><strong>8th - 11th (6:00pm)</strong><br>Team Registrations
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>Round 1</time><strong>8th - 11th (6:00pm)</strong><br>Team Registrations
             </div>
           </li>
         </ul>
@@ -471,7 +502,7 @@
                                 <span class="fa fa-angle-up"></span>Who can attend this event?
                               </a>
                             </h4>
-                          </div>
+                          </div>,
                           <div id="collapseTwo" class="panel-collapse collapse">
                             <div class="panel-body">
                               Successful applicants will be invited, though there are no restrictions on who can apply.
@@ -666,9 +697,6 @@
                 <a href="http://uclmed.tech"><i class="fa fa-code"></i></a>
                 <a href="https://github.com/samirelanduk/Pulse"><i class="fa fa-github"></i></a>
               </div>
-            </div>
-            <div class="mu-footer-bottom">
-              <p class="mu-copy-right">&copy; Copyright <a rel="nofollow" href="http://markups.io">markups.io</a>. All right reserved.</p>
             </div>
           </div>
         </div>

@@ -1,6 +1,5 @@
     .timeline-container{
-        background: linear-gradient(180deg, rgb(148, 123, 59) 0%, rgb(148, 123, 59) 20%, rgb(193, 166, 89) 40%, rgb(148, 123, 59) 60%, rgb(0, 0, 0) 100%);
-        margin:10rem 0rem;
+        background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(148, 123, 59) 20%, rgb(193, 166, 89) 40%, rgb(148, 123, 59) 60%, rgb(0, 0, 0) 100%);
     }
     .timeline-header{
         position: relative;
@@ -41,7 +40,7 @@
     width: 400px;
     padding: 15px;
     border-radius:10px;
-    background: #fec222;
+    background: #212120;
   }
   
   .timeline ul li div::before {
@@ -60,7 +59,7 @@
   .timeline ul li:nth-child(odd) div::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
-    border-color: transparent #fec222 transparent transparent;
+    border-color: transparent #212120 transparent transparent;
   }
   
   .timeline ul li:nth-child(even) div {
@@ -70,7 +69,7 @@
   .timeline ul li:nth-child(even) div::before {
     right: -15px;
     border-width: 8px 0 8px 16px;
-    border-color: transparent transparent transparent #fec222;
+    border-color: transparent transparent transparent #212120;
   }
 
   .timeline ul li::after {
@@ -78,7 +77,7 @@
   }
   
   .timeline ul li.in-view::after {
-    background: #fec222;
+    background: #ffffff;
   }
   
   .timeline ul li div {
