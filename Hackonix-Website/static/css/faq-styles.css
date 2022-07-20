@@ -125,6 +125,7 @@ ________________________________________*/
 }
 
 .accordion span:target ~ .accordion-content {
+  background:rgb(148, 123, 59);
   display: block;
   height: auto;
   padding-bottom: 2%;
