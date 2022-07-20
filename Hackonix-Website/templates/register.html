@@ -331,74 +331,77 @@
       </script> {% endcomment %}
       {% comment %} Animation End {% endcomment %}
     <div class="container-page">
-    <h1>Register For The Hackathon</h1>
-    <h2>
-      {% if messages%}
+    <center><h1>Register For The Hackathon</h1></center>
+    <div class="alert alert-danger" role="alert">
+        <div class="message-text">
+        {% if messages%}
         {% for message in messages%}
           {{message}}
         {% endfor %}
       {% endif %}
-
-    </h2>
+      </div>
+    </div>
+    <br><br>
     <div class="form">
       <form action="register" method="post">
         {% csrf_token %}
-          <div class="leader">
-            <h3>Team Name</h3>
-            <input type="text" name="teamname" placeholder="Team Name"></input>
-            <h3>Leader's Name</h3>
-            <input type="text" name="leadername" placeholder="Leader's Name"></input>
-            <h3>Leader's Roll No.</h3>
-            <input type="number" name="leaderrollno" placeholder="Roll No."></input>
-            <h3>Leader's Email</h3>
-            <input type="email" name="leaderemail" placeholder="Leader's Email"></input>
-            <h3>Leader's Phone No.</h3>
-            <input type="number" name="leaderpno" placeholder="Phone Number"></input>
-          </div>
-        
         <div class="form-body">
-
+          <div class="leader">
+            <div class="leader-input">
+            <p>Team Name</p>
+            <input type="text" name="teamname" placeholder="Team Name"></input>
+            <p>Leader's Name</p>
+            <input type="text" name="leadername" placeholder="Leader's Name"></input>
+            <p>Leader's Roll No.</p>
+            <input type="number" name="leaderrollno" placeholder="Roll No."></input>
+            <p>Leader's Email</p>
+            <input type="email" name="leaderemail" placeholder="Leader's Email"></input>
+            <p>Leader's Phone No.</p>
+            <input type="number" name="leaderpno" placeholder="Phone Number"></input>
+            </div>
+          </div>
+      
           <div class="teammate">
-            <h3>Teammate 1</h3>
-            <h3>Name</h3>
+            <p>Teammate 1</p>
+            <p>Name</p>
             <input type="text" name="teammate1name" placeholder="Name"></input>
-            <h3>Roll No.</h3>
+            <p>Roll No.</p>
             <input type="number" name="teammate1rollno" placeholder="Roll No."></input>
-            <h3>Email</h3>
+            <p>Email</p>
             <input type="email" name="teammate1email" placeholder="Email"></input>
           </div>
 
           <hr>
 
           <div class="teammate">
-            <h3>Teammate 2</h3>
-            <h3>Name</h3>
+            <p>Teammate 2</p>
+            <p>Name</p>
             <input type="text" name="teammate2name" placeholder="Name"></input>
-            <h3>Roll No.</h3>
+            <p>Roll No.</p>
             <input type="number" name="teammate2rollno" placeholder="Roll No."></input>
-            <h3>Email</h3>
+            <p>Email</p>
             <input type="email" name="teammate2email" placeholder="Email"></input>
           </div>
 
           <hr>
 
           <div class="teammate">
-            <h3>Teammate 3</h3>
-            <h3>Name</h3>
+            <p>Teammate 3</p>
+            <p>Name</p>
             <input type="text" name="teammate3name" placeholder="Name"></input>
-            <h3>Roll No.</h3>
+            <p>Roll No.</p>
             <input type="number" name="teammate3rollno" placeholder="Roll No."></input>
-            <h3>Email</h3>
+            <p>Email</p>
             <input type="email" name="teammate3email" placeholder="Email"></input>
           </div>
           <hr>
           <div class="teammate">
-            <h3>Teammate 4</h3>
-            <h3>Name</h3>
+            <p>Teammate 4</p>
+            <p>Name</p>
             <input type="text" name="teammate4name" placeholder="Name"></input>
-            <h3>Roll No.</h3>
+            <p>Roll No.</p>
             <input type="number" name="teammate4rollno" placeholder="Roll No."></input>
-            <h3>Email</h3>
+            <p>Email</p>
             <input type="email" name="teammate4email" placeholder="Email"></input>
           </div>
 
