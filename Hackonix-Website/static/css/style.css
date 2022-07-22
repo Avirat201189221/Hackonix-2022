@@ -85,7 +85,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Dense','Montserrat', sans-serif;
 	font-weight: 700;
 	margin-top: 0;
 }
@@ -100,12 +100,15 @@ h6 {
 }
 .navbar-brand{
 	font-size:2rem;
+	font-family:'Dense','Montserrat', sans-serif;
+	letter-spacing: 1px;
 }
 .nav-link{
 	font-size:1.5rem;
 	margin: 1rem;
 	color: black;
 	font-weight: 700;
+	font-family: 'Dense','Montserrat', sans-serif;
 }
 .nav-link:hover{
 	border-style: none;
@@ -289,7 +292,7 @@ button:focus {
 
 .mu-logo {
 	font-size: 35px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Dense','Montserrat', sans-serif;
 	display: inline-block;
 	font-weight: 600;
 	padding: 5px 20px;
@@ -387,8 +390,13 @@ img{
 	font-size:1.25rem ;
 }
 
+.mu-hero-register-button button a:hover{
+	color:black;
+}
+
 .mu-hero-register-button p{
 	margin:0rem;
+	color:azure;
 }
 
 .mu-event-counter-area {
@@ -508,6 +516,7 @@ img{
 	padding: 0;
 	z-index: 10;
 	text-transform: capitalize;
+	font-size:3rem;
 }
 
 .mu-about-left {
@@ -538,6 +547,7 @@ img{
 
 .about-text{
 	margin:2.5rem;
+	font-size:1.5rem;
 }
 
 /*--------------------*/
@@ -1764,7 +1774,7 @@ img{
 	}
 
 	h2 {
-		font-size: 28px;
+		font-size: 3rem;
 	}
 
 	h3 {
@@ -1859,7 +1869,7 @@ img{
 	}
 
 	h2 {
-		font-size: 25px;
+		font-size: 3rem;
 	}
 
 	.mu-event-timeline ul li .mu-single-event,
@@ -1886,7 +1896,7 @@ img{
 	}
 
 	h2 {
-		font-size: 22px;
+		font-size: 3rem;
 	}
 
 
@@ -1941,7 +1951,7 @@ img{
 
 @media screen and (max-width: 767px){
 	.mu-hero-register-button button{
-		font-size:0.8rem;
+		font-size:0.9rem;
 	}
 }	.acc{
 	font-size: 1rem;

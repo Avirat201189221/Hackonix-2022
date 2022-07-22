@@ -2,36 +2,76 @@ body{
     background-color: black;
     color:white;
 }
+hr{
+    background:black;
+}
 p{
     margin-bottom:0rem;
+    font-size:1.25rem;
+}
+.alert-danger{
+    display: inline;
+    /* margin-left: 2rem; */
+}
+.register-header{
+    margin:2rem;
+    font-size: 3rem;
+}
+.form-body {
+    padding: 2rem;
+}
+.input-body{
+    padding:2rem;
 }
 .leader{
-    border-style: solid;
-    border-radius: 0.5rem;
+    border-style: none;
+    border-radius: 1.5rem;
     margin-bottom: 4rem;
+    padding:1.5rem 1.5rem 4rem 1.5rem;
+    background:linear-gradient(180deg, rgb(148, 123, 59) 0%, rgb(148, 123, 59) 20%, rgb(193, 166, 89) 40%, rgb(148, 123, 59) 60%, rgb(0, 0, 0) 100%);
 }
 .leader-input{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
 }
-.teammate{
+.teammate-input{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    border-style: solid;
-    border-radius: 0.5rem;
+}
+.teammate{
+    background: linear-gradient(180deg, rgb(148, 123, 59) 0%, rgb(148, 123, 59) 20%, rgb(193, 166, 89) 40%, rgb(148, 123, 59) 60%, rgb(0, 0, 0) 100%);
+    border-style: none;
+    border-radius: 1.5rem;
     margin-bottom: 4rem;
+    padding:1.5rem 1.5rem 4rem 1.5rem;
+    justify-content: center;
 
 }
+
+@media screen and (min-width: 400px){
+   .teammate{
+    padding:1.5rem 1.5rem 4rem 4rem;
+   }
+}
+
 @media screen and (min-width:768px){
    .form-body{ 
     display:flex;
     flex-direction:column;
     flex-wrap: nowrap;
-    padding:10rem;
+    padding:2rem 30rem 30rem 30rem;
    }
-   
+   .message-text{
+    padding-top:3rem;
+   }
+   .alert-danger{
+    font-size: 2rem;
+   }
+   p{
+    font-size:2rem;
+   }
     /* .leader{
         display: inline;
     }
