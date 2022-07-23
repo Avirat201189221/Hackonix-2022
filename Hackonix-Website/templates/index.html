@@ -31,6 +31,8 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Theme color -->
   <link id="switcher" href="{%static 'css/orange-theme.css' %}" rel="stylesheet">
+  {% comment %} Aos Animation stylesheet {% endcomment %}
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <!-- Main Style -->
   <link href="{%static 'css/style.css' %}" rel="stylesheet">
@@ -84,7 +86,9 @@
               <!-- text based logo -->
               <!--<a class="mu-logo" href="#">Eventoz</a>-->
               <!-- image based logo -->
+              <div data-aos="fade-up">
               <a class="mu-logo" href="#"><img src="{%static 'images/Hackonix-logo-text.png' %}" alt="logo img"></a>
+              </div>
             </div>
             <!-- End center Logo -->
 
@@ -92,8 +96,10 @@
               <h2>Website Tagline</h2>
               <p class="mu-event-date-line">27-28 August 2022</p>
               <div class="mu-hero-register-button">
+                <div data-aos="zoom-in-down">
                 <button><a href="register">
                     <p class="mu-event-register-button">Register For Hackonix</p>
+                  </div>
                   </a></button>
               </div>
 
@@ -287,46 +293,42 @@
         <ul>
           <li>
             <div>
-              <time>Round 1</time><strong>8th - 11th (6:00pm)</strong><br>Team Registrations
+              <time>(11:00 AM)</time><strong> 27th August </strong><br>Inauguration
             </div>
           </li>
           <li>
             <div>
-              <time>Round 2</time><strong>12th March</strong><br>Workshop on Entrepreneurship, pitch deck and elevator
-              pitch
+              <time>(12:00 PM)</time><strong>27th August </strong><br> Hack Begins
             </div>
           </li>
           <li>
             <div>
-              <time>Round 3</time><strong>13th March</strong><br>Elevator pitch by participants and pitch deck making
-              and submission
+              <time>(5:30 PM)</time><strong>27th August </strong><br> Checkpoint - I
             </div>
           </li>
           <li>
             <div>
-              <time>Round 4</time><strong>13th March</strong><br>Investor pitch along with QNA
+              <time>(6:00 PM)</time><strong>27th August</strong><br> Reporting Time
             </div>
           </li>
           <li>
             <div>
-              <time>Round 1</time><strong>8th - 11th (6:00pm)</strong><br>Team Registrations
+              <time>(2:00 AM)</time><strong>28th August</strong><br>Checkpoint - II
             </div>
           </li>
           <li>
             <div>
-              <time>Round 1</time><strong>8th - 11th (6:00pm)</strong><br>Team Registrations
+              <time>(12:00 PM)</time><strong>28th August</strong><br>Final Submission
             </div>
           </li>
           <li>
             <div>
-              <time>Round 3</time><strong>13th March</strong><br>Elevator pitch by participants and pitch deck making
-              and submission
+              <time>(2:00 PM)</time><strong>28th August</strong><br>Pitching Round
             </div>
           </li>
           <li>
             <div>
-              <time>Round 3</time><strong>13th March</strong><br>Elevator pitch by participants and pitch deck making
-              and submission
+              <time>(5:00 PM)</time><strong>28th August</strong><br>Closing Ceremony
             </div>
           </li>
         </ul>
@@ -852,10 +854,14 @@
   <!-- Ajax contact form  -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.1/demo/js/custom.js"></script>
   <!-- Custom js -->
-  {% comment %}
-  <script type="text/javascript" src="{{ url_for('static',filename='js/app.js') }}"></script> {% endcomment %}
   <script type="text/javascript" src="{%static 'js/app.js'%}"></script>
+  {% comment %} Timeline Scripts {% endcomment %}
   <script type="text/javascript" src="{%static 'js/timeline-script.js'%}"></script>
+  {% comment %} Aos Script {% endcomment %}
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

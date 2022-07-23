@@ -99,16 +99,17 @@ h6 {
 
 }
 .navbar-brand{
-	font-size:2rem;
+	font-size:3rem;
 	font-family:'Dense','Montserrat', sans-serif;
-	letter-spacing: 1px;
+	letter-spacing: 5px;
 }
 .nav-link{
-	font-size:1.5rem;
+	font-size:2.5em;
 	margin: 1rem;
 	color: black;
 	font-weight: 700;
 	font-family: 'Dense','Montserrat', sans-serif;
+	letter-spacing: 5px;
 }
 .nav-link:hover{
 	border-style: none;
@@ -364,7 +365,7 @@ img{
 
 .mu-hero-featured-content h2 {
 	color: #fff;
-	font-size: 25px;
+	font-size: 4rem;
 	font-weight: 300;
 }
 
@@ -516,16 +517,21 @@ img{
 	padding: 0;
 	z-index: 10;
 	text-transform: capitalize;
-	font-size:3rem;
+	font-size:6rem;
 }
-
+.mu-title-area p{
+	font-size: 1rem;
+}
 .mu-about-left {
 	display: inline;
 	float: left;
 	width: 100%;
 	align-items: center;
+	padding-top:6rem;
 }
-
+/* .row .col-md-6{
+	padding-left: 6rem;
+} */
 .mu-about-left img{
 	margin:3rem 1.5rem 1.5rem 1.5rem;
 }
@@ -543,6 +549,7 @@ img{
 
 .about-header{
 	margin:3rem 0rem 1rem 0rem;
+	font-size: 6rem;
 }
 
 .about-text{
@@ -1720,15 +1727,15 @@ img{
 	}
 
 	.mu-hero-featured-content h1 {
-		font-size: 25px;
+		font-size: 2.5rem;
 	}
 
 	.mu-hero-featured-content h2 {
-		font-size: 14px;
+		font-size: 2rem;
 	}
 
 	.mu-event-date-line {
-		font-size: 12px;
+		font-size: 1rem;
 	}
 
 	.mu-event-counter-area {
@@ -1955,4 +1962,9 @@ img{
 	}
 }	.acc{
 	font-size: 1rem;
+}
+@media screen and (min-width: 767px){
+	.mu-title-area p{
+		font-size: 2rem;
+	}
 }
