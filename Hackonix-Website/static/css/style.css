@@ -1231,6 +1231,39 @@ img {
 #rulebook {
   background: #000000;
 }
+
+.rlbk-body .rulebook-title {
+  font-size: 6rem;
+}
+.headrl {
+  list-style: circle;
+}
+.rlbk {
+  padding: 5rem 0rem;
+  max-width: 55%;
+  margin: auto;
+}
+.rules {
+  list-style: none;
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+  /* box styling */
+  display: flex;
+  align-items: center;
+  background: linear-gradient(
+    0deg,
+    rgba(71, 71, 71, 0.5) 0%,
+    rgba(23, 32, 40, 0.5) 100%
+  );
+  border-radius: 2rem;
+  padding: 2rem;
+}
+.ruleno {
+  flex-basis: 12%;
+}
+
 /* end */
 
 /* Prizes */
@@ -1677,6 +1710,10 @@ img {
     line-height: 35px;
     width: 40px;
   }
+
+  .rules {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 640px) {
@@ -1929,18 +1966,9 @@ img {
   }
 }
 
-.headrl {
-  list-style: circle;
-}
-.rules {
-  list-style: circle;
-  text-align: justify;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-}
-.rlbk {
+/* .rlbk {
   margin: 50px;
-}
+} */
 
 .card {
   margin: 40px;
@@ -1958,5 +1986,26 @@ img {
 @media screen and (min-width: 767px) {
   .mu-title-area p {
     font-size: 2rem;
+  }
+}
+@media screen and (max-width: 430px) {
+  .rlbk {
+    max-width: 80%;
+    margin: auto;
+  }
+  .rule-text {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  .rlbk {
+    max-width: 85%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 330px) {
+  .rlbk {
+    max-width: 90%;
+    margin: auto;
   }
 }
