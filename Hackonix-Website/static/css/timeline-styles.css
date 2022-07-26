@@ -5,21 +5,13 @@
 }
 
 .timeline-container {
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(60, 57, 57, 1) 29%,
-    rgba(72, 69, 69, 1) 35%,
-    rgba(84, 81, 81, 1) 41%,
-    rgba(185, 177, 177, 1) 90%,
-    rgba(0, 0, 0, 1) 100%
-  );
+  background-color: #262b30;
 }
 .timeline-header {
   position: relative;
   padding: 3rem;
-  font-size: 3rem;
-  margin-top: 3rem;
+  font-size: 6rem;
+  /* margin-top: 3rem; */
   font-family: "Dense", "Montserrat", sans-serif;
 }
 .timeline ul {
@@ -127,7 +119,7 @@
   .timeline ul li:nth-child(even) div::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
-    border-color: transparent #fec222 transparent transparent;
+    border-color: transparent #212120 transparent transparent;
   }
 }
 .timeline-clippy ul li::after {

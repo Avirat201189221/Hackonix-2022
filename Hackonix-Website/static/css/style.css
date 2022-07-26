@@ -483,7 +483,7 @@ img {
 /*--------------------*/
 
 #mu-about {
-  background-color: #303841;
+  background-color: #262b30;
   display: inline;
   float: left;
   width: 100%;
@@ -1176,7 +1176,7 @@ img {
 /*--------------------*/
 
 #mu-sponsors {
-  background: black;
+  background-color: #212121;
   display: inline;
   float: left;
   width: 100%;
@@ -1224,9 +1224,11 @@ img {
 
 /* Rulebook */
 #rulebook {
-  background: #000000;
+  background: #262b30;
 }
-
+.rlbk-body {
+  background-color: #262b30;
+}
 .rlbk-body .rulebook-title {
   font-size: 6rem;
 }
@@ -1263,11 +1265,12 @@ img {
 
 /* Prizes */
 .mu-prizes-area {
-  background: black;
+  background-color: #212121;
 }
 
 .prizes-title {
   font-size: 6rem;
+  margin: 0rem;
 }
 
 /*--------------------*/
@@ -1275,7 +1278,7 @@ img {
 /*--------------------*/
 
 #mu-faq {
-  background-color: #000000;
+  background-color: #212121;
   display: inline;
   float: left;
   position: relative;
@@ -1963,11 +1966,11 @@ img {
   }
 } */
 
-@media screen and (max-width: 330px) {
+/* @media screen and (max-width: 330px) {
   .mu-about-left img {
     margin-left: 1.5rem;
   }
-}
+} */
 
 /* .rlbk {
   margin: 50px;
@@ -2015,5 +2018,9 @@ img {
 @media screen and (max-width: 430px) {
   .contact-us-text {
     flex-direction: column;
+  }
+  .nav-link:hover {
+    border-style: none;
+    border-color: rgb(148, 123, 59);
   }
 }
