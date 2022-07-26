@@ -86,21 +86,29 @@
               <!-- text based logo -->
               <!--<a class="mu-logo" href="#">Eventoz</a>-->
               <!-- image based logo -->
-              <div data-aos="fade-up">
+              <div data-aos="fade-up"
+              data-aos-duration="2000">
               <a class="mu-logo" href="#"><img src="{%static 'images/Hackonix-logo-text.png' %}" alt="logo img"></a>
               </div>
             </div>
             <!-- End center Logo -->
 
             <div class="mu-hero-featured-content">
+              <div data-aos="fade-up"
+              data-aos-duration="1800">
               <h2>Website Tagline</h2>
+            </div>
+              <div data-aos="fade-up"
+              data-aos-duration="1500">
               <p class="mu-event-date-line">27-28 August 2022</p>
+          </div>
               <div class="mu-hero-register-button">
-                <div data-aos="zoom-in-down">
+                <div data-aos="fade-up"
+                data-aos-duration="1300">
                 <button><a href="register">
                     <p class="mu-event-register-button">Register For Hackonix</p>
-                  </div>
                   </a></button>
+                </div>
               </div>
 
               <div class="mu-event-counter-area">
@@ -263,39 +271,39 @@
           <section id="rules">
             <ul class="headrl">
                 <li class="rules">
-                  <div class="ruleno"><h3>Rule #1 :</h3></div>
+                  <div class="ruleno"><h3>Rule 1 :</h3></div>
                   <div class="rule"><span class="rule-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</span></div>
                 </li>
                 <li class="rules">
-                  <div class="ruleno"><h3>Rule #2 :</h3></div>
+                  <div class="ruleno"><h3>Rule 2 :</h3></div>
                   <div class="rule"><span class="rule-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</span></div>
                 </li>
                 <li class="rules">
-                  <div class="ruleno"><h3>Rule #3 :</h3></div>
+                  <div class="ruleno"><h3>Rule 3 :</h3></div>
                   <div class="rule"><span class="rule-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</span></div>
                 </li>
                 <li class="rules">
-                  <div class="ruleno"><h3>Rule #4 :</h3></div>
+                  <div class="ruleno"><h3>Rule 4 :</h3></div>
                   <div class="rule"><span class="rule-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</span></div>
                 </li>
                 <li class="rules">
-                  <div class="ruleno"><h3>Rule #5 :</h3></div>
+                  <div class="ruleno"><h3>Rule 5 :</h3></div>
                   <div class="rule"><span class="rule-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</span></div>
                 </li>
                 <li class="rules">
-                  <div class="ruleno"><h3>Rule #6 :</h3></div>
+                  <div class="ruleno"><h3>Rule 6 :</h3></div>
                   <div class="rule"><span class="rule-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</span></div>
                 </li>
                 <li class="rules">
-                  <div class="ruleno"><h3>Rule #7 :</h3></div>
+                  <div class="ruleno"><h3>Rule 7 :</h3></div>
                   <div class="rule"><span class="rule-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</span></div>
                 </li>
                 <li class="rules">
-                  <div class="ruleno"><h3>Rule #8 :</h3></div>
+                  <div class="ruleno"><h3>Rule 8 :</h3></div>
                   <div class="rule"><span class="rule-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</span></div>
                 </li>
                 <li class="rules">
-                  <div class="ruleno"><h3>Rule #9 :</h3></div>
+                  <div class="ruleno"><h3>Rule 9 :</h3></div>
                   <div class="rule"><span class="rule-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</span></div>
                 </li>
             </ul>
@@ -309,7 +317,7 @@
     <section id="mu-prizes">
       <div class="mu-prizes-area">
         <center>
-          <h2>Prizes</h2>
+          <h2 class="prizes-title">Prizes</h2>
         </center>
       </div>
     </section>
@@ -810,17 +818,13 @@
 
               <div class="mu-title-area">
                 <h2 class="mu-heading-title">Contact Us</h2>
-                <p>Insert Message Here</p>
-              </div>
-
-              <!-- Start Contact Content -->
-              <div class="mu-contact-content">
-                <div class="row">
-
-                <div class="col-md-12">
-                  <div class="mu-contact-form-area">
-                    <div id="form-messages"></div>
-                    </div>
+               <!-- Start Contact Content -->
+                <div class="contact-us-text">
+                  <div class="left-text">
+                    <span>Insert left side text</span>
+                  </div>
+                  <div class="right-text">
+                    <span>Insert Right Side Text</span>
                   </div>
                 </div>
               </div>
@@ -870,8 +874,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <!-- Bootstrap -->
-  {% comment %}
-  <script src="{%static'/js/bootstrap.min.js'%}"></script> {% endcomment %}
   <!-- Slick slider -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
     integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="

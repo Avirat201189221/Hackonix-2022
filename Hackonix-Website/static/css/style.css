@@ -97,15 +97,7 @@ h6 {
   position: fixed;
   width: 100%;
   z-index: 99999999999999999999999999999;
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(60, 57, 57, 1) 29%,
-    rgba(72, 69, 69, 1) 35%,
-    rgba(84, 81, 81, 1) 41%,
-    rgba(185, 177, 177, 1) 90%,
-    rgba(205, 197, 197, 1) 100%
-  );
+  background: rgb(148, 123, 59);
   justify-content: flex-end;
 }
 .navbar-brand {
@@ -122,13 +114,15 @@ h6 {
   letter-spacing: 5px;
 }
 .nav-link:hover {
+  border-style: solid;
+  border-color: black;
+  border-radius: 1.75rem;
+  color: white;
+}
+/* .nav-link:focus {
   border-style: none;
   background-color: azure;
-}
-.nav-link:focus {
-  border-style: none;
-  background-color: azure;
-}
+} */
 h1 {
   font-size: 38px;
 }
@@ -283,7 +277,7 @@ button:focus {
   float: left;
   opacity: 0.94;
   width: 100%;
-  /* background: linear-gradient(to right, #0f2027, #203a43, #2c5364); */
+  background-color: #212121;
 }
 
 .mu-logo-area {
@@ -393,7 +387,9 @@ img {
   border-radius: 2rem;
   font-size: 1.25rem;
 }
-
+.register:hover {
+  background-color: #000000;
+}
 .mu-hero-register-button button a:hover {
   color: black;
 }
@@ -487,8 +483,7 @@ img {
 /*--------------------*/
 
 #mu-about {
-  /* background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(148, 123, 59) 20%, rgb(193, 166, 89) 40%, rgb(148, 123, 59) 60%, rgb(0, 0, 0) 100%); */
-  background: black;
+  background-color: #303841;
   display: inline;
   float: left;
   width: 100%;
@@ -517,7 +512,7 @@ img {
   display: inline;
   float: left;
   text-align: center;
-  padding: 0 120px;
+  /* padding: 0 120px; */
   width: 100%;
 }
 
@@ -542,9 +537,9 @@ img {
 /* .row .col-md-6{
 	padding-left: 6rem;
 } */
-.mu-about-left img {
+/* .mu-about-left img {
   margin: 3rem 1.5rem 1.5rem 1.5rem;
-}
+} */
 .col-md-6 .mu-about-right {
   padding-bottom: 12rem;
 }
@@ -1271,6 +1266,10 @@ img {
   background: black;
 }
 
+.prizes-title {
+  font-size: 6rem;
+}
+
 /*--------------------*/
 /* FAQ */
 /*--------------------*/
@@ -1347,15 +1346,7 @@ img {
 /*--------------------*/
 
 #mu-contact {
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(60, 57, 57, 1) 29%,
-    rgba(72, 69, 69, 1) 35%,
-    rgba(84, 81, 81, 1) 41%,
-    rgba(60, 57, 57, 1) 90%,
-    rgba(0, 0, 0, 1) 100%
-  );
+  background-color: rgb(148, 123, 59);
   display: inline;
   float: left;
   width: 100%;
@@ -1364,8 +1355,21 @@ img {
 .mu-contact-area {
   display: inline;
   float: left;
-  padding: 100px 0 50px;
+  padding: 3rem 0rem 0rem 0rem;
   width: 100%;
+}
+
+.contact-us-text {
+  display: flex;
+  align-items: center;
+}
+
+.left-text {
+  flex-basis: 50%;
+}
+
+.right-text {
+  flex-basis: 50%;
 }
 
 .mu-contact-header {
@@ -1379,8 +1383,8 @@ img {
 .mu-contact-content {
   display: inline;
   float: left;
-  margin-top: 50px;
-  padding: 0 20%;
+  /* margin-top: 50px;
+  padding: 0 20%; */
   width: 100%;
 }
 
@@ -1943,22 +1947,21 @@ img {
 @media screen and (min-width: 800px) {
   .mu-about-left img {
     height: 300px;
-    margin-left: 5rem;
     margin-top: 7rem;
   }
 }
 
-@media screen and (max-width: 450px) {
+/* @media screen and (max-width: 450px) {
   .mu-about-left img {
     margin-left: 5.25rem;
   }
-}
+} */
 
-@media screen and (max-width: 380px) {
+/* @media screen and (max-width: 380px) {
   .mu-about-left img {
     margin-left: 3.5rem;
   }
-}
+} */
 
 @media screen and (max-width: 330px) {
   .mu-about-left img {
@@ -2007,5 +2010,10 @@ img {
   .rlbk {
     max-width: 90%;
     margin: auto;
+  }
+}
+@media screen and (max-width: 430px) {
+  .contact-us-text {
+    flex-direction: column;
   }
 }

@@ -4,6 +4,7 @@ from sqlalchemy import true
 from app.models import HackathonTeam
 from app.forms import TeamForm
 from django.contrib import messages
+from django.core.mail import send_mail
 # Create your views here.
 
 
@@ -70,10 +71,18 @@ def register(request):
         #     return render(request,"register.html")
         ###########################################################
         # all_teams=HackathonTeam.objects.all()
-
+        # send_mail(
+        #     'Hackonix Registration',
+        #     'Thank you for registering for Hackonix',
+        #     'asharma19_be21@thapar.edu',
+        #     [leaderEmail],
+        #     fail_silently=False,
+        # )
         return render(request, "register-success.html", {"team_name": teamName})
     return render(request, "register.html")
 
 # def success(request):
 
 #     return render(request,"register-success.html")
+# 303841
+# 3A4750
