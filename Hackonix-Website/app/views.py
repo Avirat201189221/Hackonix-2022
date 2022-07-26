@@ -84,5 +84,3 @@ def register(request):
 # def success(request):
 
 #     return render(request,"register-success.html")
-# 303841
-# 3A4750

@@ -1,0 +1,14 @@
+.prizes-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.prize-container {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 430px) {
+  .prizes-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+}
