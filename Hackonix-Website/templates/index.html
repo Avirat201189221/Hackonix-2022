@@ -49,6 +49,10 @@
   {% comment %}Prize Styles {% endcomment %}
   <link href="{%static 'css/prizes-styles.css' %}" rel="stylesheet">
 
+  {% comment %} Carousel {% endcomment %}
+  <link href="{%static 'css/carousel.css' %}" rel="stylesheet">
+
+
 
 </head>
 
@@ -58,7 +62,7 @@
     <!-- Start menu  -->
     <nav class="navbar navbar-expand-lg me-auto">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Hackonix</a>
+        <a class="navbar-brand" href="#"><img src="{%static 'images/Hackonix-gold-O.png' %}" class="hackonix-o"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -86,6 +90,7 @@
           <!-- Start hero featured area -->
           <div class="mu-hero-featured-area">
             <!-- Start center Logo -->
+            {% comment %} <img width=1600 src="{%static 'images/phoenix-gif.gif' %}" alt="logo img" style="filter:blur(5px)"> {% endcomment %}
             <div class="mu-logo-area">
               <!-- text based logo -->
               <!--<a class="mu-logo" href="#">Eventoz</a>-->
@@ -214,47 +219,97 @@
               <div class="mu-sponsors-content">
                 <div class="row">
 
-                 <div class="card" style="width: 18rem;">
-                      <img class="card-img-top" src="..." alt="Card image cap">
-                      <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      </div>
+                  <div class="container"> 
+                    <div class="slider">
+        
+                        <div class="box1 box">
+                            <div class="bg"></div>
+                            <div class="details">
+                                <h1>I'm the first Box</h1>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing 
+                                    elit. Integer lacinia dui lectus. Donec scelerisque ipsum
+                                    diam, ac mattis orci pellentesque eget. 
+                                </p>
+                                <button>Check Now</button>
+                            </div>
+        
+                            <div class="illustration"><div class="inner"></div></div>
+                        </div>
+                                        
+                        
+                        <div class="box2 box">
+                            <div class="bg"></div>
+                            <div class="details">
+                                <h1>I'm the second Box</h1>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing 
+                                    elit. Integer lacinia dui lectus. Donec scelerisque ipsum
+                                    diam, ac mattis orci pellentesque eget. 
+                                </p>
+                                <button>Check Now</button>
+                            </div>
+        
+                            <div class="illustration"><div class="inner"></div></div>
+                        </div>
+                                        
+                        <div class="box3 box">
+                            <div class="bg"></div>
+                            <div class="details">
+                                <h1>I'm the third Box</h1>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing 
+                                    elit. Integer lacinia dui lectus. Donec scelerisque ipsum
+                                    diam, ac mattis orci pellentesque eget. 
+                                </p>
+                                <button>Check Now</button>
+                            </div>
+        
+                            <div class="illustration"><div class="inner"></div></div>
+                        </div>
+                                        
+                        <div class="box4 box">
+                            <div class="bg"></div>
+                            <div class="details">
+                                <h1>I'm the fourth Box</h1>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing 
+                                    elit. Integer lacinia dui lectus. Donec scelerisque ipsum
+                                    diam, ac mattis orci pellentesque eget. 
+                                </p>
+                                <button>Check Now</button>
+                            </div>
+        
+                            <div class="illustration"><div class="inner"></div></div>
+                        </div>
+                                        
+                        <div class="box5 box">
+                            <div class="bg"></div>
+                            <div class="details">
+                                <h1>I'm the fifth Box</h1>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing 
+                                    elit. Integer lacinia dui lectus. Donec scelerisque ipsum
+                                    diam, ac mattis orci pellentesque eget. 
+                                </p>
+                                <button>Check Now</button>
+                            </div>
+        
+                            <div class="illustration"><div class="inner"></div></div>
+                        </div>
+                                        
                     </div>
-  
-                    <div class="card" style="width: 18rem;">
-                      <img class="card-img-top" src="..." alt="Card image cap">
-                      <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      </div>
+        
+                    <svg xmlns="http://www.w3.org/2000/svg" class="prev" width="56.898" height="91" viewBox="0 0 56.898 91"><path d="M45.5,0,91,56.9,48.452,24.068,0,56.9Z" transform="translate(0 91) rotate(-90)" fill="#fff"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="next" width="56.898" height="91" viewBox="0 0 56.898 91"><path d="M45.5,0,91,56.9,48.452,24.068,0,56.9Z" transform="translate(56.898) rotate(90)" fill="#fff"/></svg>
+                    <div class="trail">
+                            <div class="box1 active">1</div>
+                            <div class="box2">2</div>
+                            <div class="box3">3</div>
+                            <div class="box4">4</div>
+                            <div class="box5">5</div>
                     </div>
-  
-                    <div class="card" style="width: 18rem;">
-                      <img class="card-img-top" src="..." alt="Card image cap">
-                      <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      </div>
-                    </div>
-  
-                    <div class="card" style="width: 18rem;">
-                      <img class="card-img-top" src="..." alt="Card image cap">
-                      <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      </div>
-                    </div>
-  
-                    <div class="card" style="width: 18rem;">
-                      <img class="card-img-top" src="..." alt="Card image cap">
-                      <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      </div>
-                    </div>
-  
-                    <div class="card" style="width: 18rem;">
-                      <img class="card-img-top" src="..." alt="Card image cap">
-                      <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      </div>
-                    </div>
+                </div>   
 
                 </div>
               </div>
@@ -347,7 +402,7 @@
             <div class="prize-desc">
               <center><h4>Track Winners</h4></center>
               <p class="prize-desc-text">The track winners are people who have made exceptional, specifc projects pertaining to the given tracks for the hackathon</p>
-              <p"prize-desc-text">The prizes given to them are:</p>
+              <p class="prize-desc-text">The prizes given to them are:</p>
               <p>- Insert Prize</p>
               <p>- Insert Prize</p>
               <p>- Insert Prize</p>
@@ -929,8 +984,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"
     integrity="sha512-lteuRD+aUENrZPTXWFRPTBcDDxIGWe5uu0apPEn+3ZKYDwDaEErIK9rvR0QzUGmUQ55KFE2RqGTVoZsKctGMVw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-  <!-- Ajax contact form  -->
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CSSRulePlugin3.min.js"></script>
+    
+    <!-- Ajax contact form  -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.1/demo/js/custom.js"></script>
   <!-- Custom js -->
   <script type="text/javascript" src="{%static 'js/app.js'%}"></script>
@@ -938,11 +995,14 @@
   <script type="text/javascript" src="{%static 'js/timeline-script.js'%}"></script>
   {% comment %} jQuery {% endcomment %}
   <script type="text/javascript" src="{%static 'js/jquery.js'%}"></script>
+  {% comment %} Carousel.js {% endcomment %}
+  <script type="text/javascript" src="{%static 'js/carousel.js'%}"></script>
   {% comment %} Aos Script {% endcomment %}
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
+  {% comment %} Carousel {% endcomment %}
 </body>
 
 </html>

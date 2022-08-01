@@ -104,22 +104,26 @@ h6 {
   background: rgb(148, 123, 59);
   justify-content: flex-end;
 }
-.fixed-navbar-prop {
-  position: fixed;
-  background: rgb(0, 0, 0, 0);
-  top: 0;
-  left: 0;
-  width: 100%;
+
+.container-fluid {
+  padding: 0rem;
 }
+
 .navbar-brand {
   font-size: 3rem;
   font-family: "Dense", "Montserrat", sans-serif;
   letter-spacing: 5px;
+  margin-left: 1rem;
 }
+
+.navbar-brand img {
+  width: 5rem;
+}
+
 .nav-link {
   font-size: 2.5em;
   margin: 1rem;
-  color: black;
+  color: #d1d2d2;
   font-weight: 700;
   font-family: "Dense", "Montserrat", sans-serif;
   letter-spacing: 5px;
@@ -474,12 +478,6 @@ img {
   padding: 15px 15px;
   font-size: 28px;
   line-height: 20px;
-}
-
-.navbar-brand img {
-  height: 50px;
-  width: auto;
-  margin-top: -15px;
 }
 
 .mu-navbar .mu-menu li a {
@@ -2038,5 +2036,15 @@ img {
   .nav-link:hover {
     border-style: none;
     border-color: rgb(148, 123, 59);
+  }
+}
+@media screen and (min-width: 768px) {
+  .fixed-navbar-prop {
+    position: fixed;
+    background: rgb(0, 0, 0, 0);
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: black;
   }
 }
