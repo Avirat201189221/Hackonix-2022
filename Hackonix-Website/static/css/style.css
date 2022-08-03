@@ -276,6 +276,30 @@ button:focus {
 /* HEADER */
 /*--------------------*/
 
+@keyframes phoenix-anim {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+    filter: brightness(0.5);
+  }
+}
+
+.phoenix-back {
+  position: absolute;
+  /* left: 10%; */
+  width: 100%;
+  border-radius: 0;
+  border: none;
+  opacity: 0.5;
+  filter: brightness(0.5);
+  animation: phoenix-anim 6s ease 0s 1;
+}
+
 #mu-hero {
   background-image: url("/assets/images/header-background2.jpeg");
   display: inline;
@@ -1278,6 +1302,7 @@ img {
 /* end */
 
 /* Prizes */
+
 .mu-prizes-area {
   background-color: #212121;
 }
@@ -1773,6 +1798,14 @@ img {
 }
 
 @media (max-width: 480px) {
+  .phoenix-back {
+    top: 15%;
+  }
+
+  img.center {
+    width: 80%;
+  }
+
   body {
     font-size: 14px;
   }
