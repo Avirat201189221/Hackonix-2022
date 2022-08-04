@@ -4,9 +4,10 @@
     rgba(205, 197, 197, 1) 100%;
 }
 
-/* .timeline-container {
-  background-color: #262b30;
-} */
+.timeline-container {
+  /* background-color: #262b30; */
+  margin-top: 10rem;
+}
 .timeline-header {
   position: relative;
   padding: 3rem;
