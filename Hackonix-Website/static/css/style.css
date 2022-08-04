@@ -48,7 +48,11 @@ body {
   letter-spacing: 0.5px;
   line-height: 1.5;
   color: azure;
-  background: #000000;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(50, 46, 41, 1) 100%
+  );
 }
 
 ul {
@@ -521,7 +525,7 @@ img {
 /*--------------------*/
 
 #mu-about {
-  background-color: #262b30;
+  /* background-color: #262b30; */
   display: inline;
   float: left;
   width: 100%;
@@ -537,11 +541,8 @@ img {
   background: linear-gradient(
     0deg,
     rgba(0, 0, 0, 1) 0%,
-    rgba(60, 57, 57, 1) 29%,
-    rgba(72, 69, 69, 1) 35%,
-    rgba(84, 81, 81, 1) 41%,
-    rgba(185, 177, 177, 1) 90%,
-    rgba(205, 197, 197, 1) 100%
+    rgba(61, 61, 60, 1) 73%,
+    rgba(125, 124, 123, 0.4) 100%
   );
   border-radius: 1rem;
   margin-bottom: 2rem;
@@ -1214,7 +1215,7 @@ img {
 /*--------------------*/
 
 #mu-sponsors {
-  background-color: #212121;
+  /* background-color: #212121; */
   display: inline;
   float: left;
   width: 100%;
@@ -1264,9 +1265,9 @@ img {
 #rulebook {
   background: #262b30;
 }
-.rlbk-body {
+/* .rlbk-body {
   background-color: #262b30;
-}
+} */
 .rlbk-body .rulebook-title {
   font-size: 6rem;
 }
@@ -1303,9 +1304,9 @@ img {
 
 /* Prizes */
 
-.mu-prizes-area {
+/* .mu-prizes-area {
   background-color: #212121;
-}
+} */
 
 .prizes-title {
   font-size: 6rem;
@@ -1317,7 +1318,7 @@ img {
 /*--------------------*/
 
 #mu-faq {
-  background-color: #212121;
+  /* background-color: #212121; */
   display: inline;
   float: left;
   position: relative;
