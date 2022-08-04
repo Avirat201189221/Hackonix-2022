@@ -12,7 +12,7 @@
     <link href="{% static 'css/register-styles.css' %}" rel="stylesheet">
   </head>
   <body>
-    <div class="container-page">
+    {% comment %} <div class="container-page">
     <div class="register-header">
     <center><h1>Register For The Hackathon</h1></center>
     </div>
@@ -101,8 +101,43 @@
         </div>
       </form>
     </div>
+  </div> {% endcomment %}
+  <div class="container right-panel-active">
+    <!-- Sign Up -->
+    <div class="container__form container--signup">
+      <form action="#" class="form" id="form1">
+        <h2 class="form__title">Sign Up</h2>
+        <input type="text" placeholder="User" class="input" />
+        <input type="email" placeholder="Email" class="input" />
+        <input type="password" placeholder="Password" class="input" />
+        <button class="btn">Sign Up</button>
+      </form>
+    </div>
+  
+    <!-- Sign In -->
+    <div class="container__form container--signin">
+      <form action="#" class="form" id="form2">
+        <h2 class="form__title">Sign In</h2>
+        <input type="email" placeholder="Email" class="input" />
+        <input type="password" placeholder="Password" class="input" />
+        <a href="#" class="link">Forgot your password?</a>
+        <button class="btn">Sign In</button>
+      </form>
+    </div>
+  
+    <!-- Overlay -->
+    <div class="container__overlay">
+      <div class="overlay">
+        <div class="overlay__panel overlay--left">
+          <button class="btn" id="signIn">Sign In</button>
+        </div>
+        <div class="overlay__panel overlay--right">
+          <button class="btn" id="signUp">Sign Up</button>
+        </div>
+      </div>
+    </div>
   </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <script src="{% static 'js\ashfall-animation.js' %}" type="text/javascript"></script>
+    <script src="{% static 'js\register-script.js' %}" type="text/javascript"></script>
   </body>
 </html>
