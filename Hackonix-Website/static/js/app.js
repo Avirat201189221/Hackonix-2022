@@ -53,7 +53,15 @@ $(function () {
 
 function onScroll() {
 	let elems = ["h2.prizes-title"]
-	if (window.innerHeight === document.querySelector(i).getBoundingClientRect().top) {
-
+	for (let i of elems) {
+		if (window.innerHeight >= document.querySelector(i).getBoundingClientRect().top - 200) {
+			document.querySelectorAll(".prize-container").forEach(elem => {
+				if (!elem.classList.contains("fade-flip")) {
+					elem.classList.add("fade-flip")
+				}
+			})
+		}
 	}
 }
+
+setInterval(onScroll, 1000)
