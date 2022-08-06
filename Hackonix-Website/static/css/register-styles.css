@@ -1,301 +1,186 @@
-/* body{
-    background-color: black;
-    color:white;
-}
-hr{
-    background:black;
-}
-p{
-    margin-bottom:0rem;
-    font-size:1.25rem;
-}
-.alert-danger{
-    display: inline;
-    /* margin-left: 2rem; */
-/* } */
-/* .register-header{
-    margin:2rem;
-    font-size: 3rem;
-}
-.form-body {
-    padding: 2rem;
-}
-.input-body{
-    padding:2rem;
-}
-.leader{
-    border-style: none;
-    border-radius: 1.5rem;
-    margin-bottom: 4rem;
-    padding:1.5rem 1.5rem 4rem 1.5rem;
-    background:linear-gradient(180deg, rgb(148, 123, 59) 0%, rgb(148, 123, 59) 20%, rgb(193, 166, 89) 40%, rgb(148, 123, 59) 60%, rgb(0, 0, 0) 100%);
-}
-.leader-input{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-}
-.teammate-input{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-}
-.teammate{
-    background: linear-gradient(180deg, rgb(148, 123, 59) 0%, rgb(148, 123, 59) 20%, rgb(193, 166, 89) 40%, rgb(148, 123, 59) 60%, rgb(0, 0, 0) 100%);
-    border-style: none;
-    border-radius: 1.5rem;
-    margin-bottom: 4rem;
-    padding:1.5rem 1.5rem 4rem 1.5rem;
-    justify-content: center;
+/* all */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-
-@media screen and (min-width: 400px){
-   .teammate{
-    padding:1.5rem 1.5rem 4rem 4rem;
-   }
-} */
-
-/* @media screen and (min-width:768px){
-   .form-body{ 
-    display:flex;
-    flex-direction:column;
-    flex-wrap: nowrap;
-    padding:2rem 30rem 30rem 30rem;
-   }
-   .message-text{
-    padding-top:3rem;
-   }
-   .alert-danger{
-    font-size: 2rem;
-   }
-   p{
-    font-size:2rem;
-   }  */
-/* .leader{
-        display: inline;
-    }
-    .teammate{
-        display: inline;
-    }
-    .submit{
-        display: inline;
-    } */
-/* } */
 
 :root {
-  /* COLORS */
-  --white: #e9e9e9;
-  --gray: #333;
-  --blue: #0367a6;
-  --lightblue: #008997;
-
-  /* RADII */
-  --button-radius: 0.7rem;
-
-  /* SIZES */
-  --max-width: 758px;
-  --max-height: 420px;
-
-  font-size: 16px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --main-blue: #71b7e6;
+  --main-purple: #9b59b6;
+  --main-grey: #ccc;
+  --sub-grey: #d9d9d9;
 }
 
 body {
-  align-items: center;
-  background-color: var(--white);
-  background: url("https://res.cloudinary.com/dci1eujqw/image/upload/v1616769558/Codepen/waldemar-brandt-aThdSdgx0YM-unsplash_cnq4sb.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: grid;
-  height: 100vh;
-  place-items: center;
-}
-
-.form__title {
-  font-weight: 300;
-  margin: 0;
-  margin-bottom: 1.25rem;
-}
-
-.link {
-  color: var(--gray);
-  font-size: 0.9rem;
-  margin: 1.5rem 0;
-  text-decoration: none;
-}
-
-.container {
-  background-color: var(--white);
-  border-radius: var(--button-radius);
-  box-shadow: 0 0.9rem 1.7rem rgba(0, 0, 0, 0.25),
-    0 0.7rem 0.7rem rgba(0, 0, 0, 0.22);
-  height: var(--max-height);
-  max-width: var(--max-width);
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-}
-
-.container__form {
-  height: 100%;
-  position: absolute;
-  top: 0;
-  transition: all 0.6s ease-in-out;
-}
-
-.container--signin {
-  left: 0;
-  width: 50%;
-  z-index: 2;
-}
-
-.container.right-panel-active .container--signin {
-  transform: translateX(100%);
-}
-
-.container--signup {
-  left: 0;
-  opacity: 0;
-  width: 50%;
-  z-index: 1;
-}
-
-.container.right-panel-active .container--signup {
-  animation: show 0.6s;
-  opacity: 1;
-  transform: translateX(100%);
-  z-index: 5;
-}
-
-.container__overlay {
-  height: 100%;
-  left: 50%;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  transition: transform 0.6s ease-in-out;
-  width: 50%;
-  z-index: 100;
-}
-
-.container.right-panel-active .container__overlay {
-  transform: translateX(-100%);
-}
-
-.overlay {
-  background-color: var(--lightblue);
-  background: url("https://res.cloudinary.com/dci1eujqw/image/upload/v1616769558/Codepen/waldemar-brandt-aThdSdgx0YM-unsplash_cnq4sb.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  left: -100%;
-  position: relative;
-  transform: translateX(0);
-  transition: transform 0.6s ease-in-out;
-  width: 200%;
-}
-
-.container.right-panel-active .overlay {
-  transform: translateX(50%);
-}
-
-.overlay__panel {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: center;
-  position: absolute;
-  text-align: center;
-  top: 0;
-  transform: translateX(0);
-  transition: transform 0.6s ease-in-out;
-  width: 50%;
-}
-
-.overlay--left {
-  transform: translateX(-20%);
-}
-
-.container.right-panel-active .overlay--left {
-  transform: translateX(0);
-}
-
-.overlay--right {
-  right: 0;
-  transform: translateX(0);
-}
-
-.container.right-panel-active .overlay--right {
-  transform: translateX(20%);
-}
-
-.btn {
-  background-color: var(--blue);
-  background-image: linear-gradient(
-    90deg,
-    var(--blue) 0%,
-    var(--lightblue) 74%
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 30%,
+    rgba(15, 15, 47, 1) 100%
   );
-  border-radius: 20px;
-  border: 1px solid var(--blue);
-  color: var(--white);
-  cursor: pointer;
-  font-size: 0.8rem;
-  font-weight: bold;
-  letter-spacing: 0.1rem;
-  padding: 0.9rem 4rem;
-  text-transform: uppercase;
-  transition: transform 80ms ease-in;
 }
 
-.form > .btn {
-  margin-top: 1.5rem;
+.form-body {
+  display: flex;
+  /* height: 100vh; */
+  justify-content: center; /*center vertically */
+  align-items: center; /* center horizontally */
+  padding: 10px;
 }
 
-.btn:active {
-  transform: scale(0.95);
+.form-title {
+  color: azure;
+  margin: 2rem;
+  padding-top: 3rem;
+}
+/* container and form */
+.container {
+  max-width: 700px;
+  width: 100%;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+}
+.container .title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
 }
 
-.btn:focus {
+.container .title::before {
+  content: "";
+  position: absolute;
+  height: 3.5px;
+  width: 30px;
+  background: linear-gradient(135deg, var(--main-blue), var(--main-purple));
+  left: 0;
+  bottom: 0;
+}
+
+.container form .user__details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+/* inside the form user details */
+form .user__details .input__box {
+  width: calc(100% / 2 - 20px);
+  margin-bottom: 15px;
+}
+
+.user__details .input__box .details {
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+}
+.user__details .input__box input {
+  height: 45px;
+  width: 100%;
   outline: none;
+  border-radius: 5px;
+  border: 1px solid var(--main-grey);
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
 }
 
-.form {
-  background-color: var(--white);
+.user__details .input__box input:focus,
+.user__details .input__box input:valid {
+  border-color: var(--main-purple);
+}
+
+/* inside the form gender details */
+
+form .gender__details .gender__title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+form .gender__details .category {
+  display: flex;
+  width: 80%;
+  margin: 15px 0;
+  justify-content: space-between;
+}
+
+.gender__details .category label {
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 0 3rem;
+}
+
+.gender__details .category .dot {
+  height: 18px;
+  width: 18px;
+  background: var(--sub-grey);
+  border-radius: 50%;
+  margin: 10px;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+
+#dot-1:checked ~ .category .one,
+#dot-2:checked ~ .category .two,
+#dot-3:checked ~ .category .three {
+  border-color: var(--sub-grey);
+  background: var(--main-purple);
+}
+
+form input[type="radio"] {
+  display: none;
+}
+
+/* submit button */
+form .button {
+  height: 45px;
+  margin: 45px 0;
+}
+
+form .button input {
   height: 100%;
-  text-align: center;
-}
-
-.input {
-  background-color: #fff;
-  border: none;
-  padding: 0.9rem 0.9rem;
-  margin: 0.5rem 0;
   width: 100%;
+  outline: none;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(15, 15, 47, 1) 100%
+  );
+  transition: all 1s ease;
 }
 
-@keyframes show {
-  0%,
-  49.99% {
-    opacity: 0;
-    z-index: 1;
+/* form .button input:hover {
+  background: linear-gradient(-135deg, var(--main-blue), var(--main-purple));
+} */
+
+@media only screen and (max-width: 584px) {
+  .container {
+    max-width: 100%;
   }
 
-  50%,
-  100% {
-    opacity: 1;
-    z-index: 5;
+  form .user__details .input__box {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  form .gender__details .category {
+    width: 100%;
+  }
+
+  .container form .user__details {
+    /* max-height: 300px; */
+    overflow-y: scroll;
+  }
+
+  .user__details::-webkit-scrollbar {
+    width: 0;
   }
 }

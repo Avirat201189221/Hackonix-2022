@@ -32,6 +32,11 @@ Version: 1.0
 /* # 303841
 # 3A4750 */
 
+@font-face {
+  font-family: "Dense";
+  src: url("../fonts/Dense-Regular.otf");
+}
+
 :root {
   --lg1: 0deg, rgba(0, 0, 0, 1) 0%, rgba(60, 57, 57, 1) 29%,
     rgba(72, 69, 69, 1) 35%, rgba(84, 81, 81, 1) 41%, rgba(185, 177, 177, 1) 90%,
@@ -320,7 +325,7 @@ button:focus {
   float: left;
   opacity: 0.94;
   width: 100%;
-  background-color: #212121;
+  /* background-color: #212121; */
 }
 
 .mu-logo-area {
@@ -1314,17 +1319,6 @@ img {
   margin: 0rem;
 }
 
-@keyframes flip {
-  0% {
-    opacity: 0;
-    transform: rotateY(-180);
-  }
-  100% {
-    opacity: 1;
-    transform: rotateY(0);
-  }
-}
-
 .prize-container {
   opacity: 0;
   transition: all 1s;
@@ -1332,13 +1326,13 @@ img {
 }
 
 .prize-container:nth-child(1) {
-  transition-delay: 1s;
+  transition-delay: 0.5s;
 }
 .prize-container:nth-child(2) {
-  transition-delay: 1.5s;
+  transition-delay: 1s;
 }
 .prize-container:nth-child(3) {
-  transition-delay: 2s;
+  transition-delay: 1.5s;
 }
 
 .fade-flip {
@@ -1443,10 +1437,14 @@ img {
 
 .left-text {
   flex-basis: 50%;
+  text-align: left;
+  margin: 3rem;
 }
 
 .right-text {
   flex-basis: 50%;
+  text-align: left;
+  margin: 3rem;
 }
 
 .mu-contact-header {
@@ -2116,3 +2114,9 @@ img {
     color: black;
   }
 }
+
+/* @media screen and (max-width: 450px){
+  .mu-logo img{
+    object-fit: fill;
+  }
+} */
