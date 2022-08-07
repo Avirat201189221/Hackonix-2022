@@ -25,3 +25,9 @@ package-lock.json
 
 # pyc files
 __pycache__
+
+# Env
+Scripts
+Lib
+Include
+pyvenv.cfg
