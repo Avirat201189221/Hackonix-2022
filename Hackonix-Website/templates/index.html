@@ -52,8 +52,13 @@
   {% comment %} Carousel {% endcomment %}
   <link href="{%static 'css/carousel.css' %}" rel="stylesheet">
 
-  {% comment %} Dense Font {% endcomment %}
-  <link href="{%static 'fonts/Dense-Regular.otf' %}" rel="">
+  <!-- Dense Font -->
+  <style>
+    @font-face {
+      font-family: "Dense";
+      src: url("{%static 'fonts/Dense-Regular.otf' %}") format("opentype");
+    }
+  </style>
 
 </head>
 
@@ -989,13 +994,21 @@
                 <!-- Start Contact Content -->
                 <div class="contact-us-text">
                   <div class="left-text">
-                    <center><h1 style="font-size:4rem">ISTE</h1></center>
+                    <center>
+                      <h1 style="font-size:4rem">ISTE</h1>
+                    </center>
                     <span>
-                      ISTE is a well established technical society with a love of creating a cohesive environment to make learning fun, insightful and yet impactful. We have regularly been organizing events, seminars, workshops to see real-life impact.</span>
+                      ISTE is a well established technical society with a love of creating a cohesive environment to
+                      make learning fun, insightful and yet impactful. We have regularly been organizing events,
+                      seminars, workshops to see real-life impact.</span>
                   </div>
                   <div class="right-text">
-                    <center><h1 style="font-size:3rem">Follow Us On:</h1></center>
-                    <span>Like & Follow our facebook and instagram pages to get instant notifications on the upcoming events and workshops. Be sure to check out our Linkedin and Instagram for updates on our latest events and posts about tech-related topics.</span>
+                    <center>
+                      <h1 style="font-size:3rem">Follow Us On:</h1>
+                    </center>
+                    <span>Like & Follow our facebook and instagram pages to get instant notifications on the upcoming
+                      events and workshops. Be sure to check out our Linkedin and Instagram for updates on our latest
+                      events and posts about tech-related topics.</span>
                   </div>
                 </div>
               </div>
