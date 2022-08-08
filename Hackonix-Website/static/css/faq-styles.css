@@ -88,6 +88,7 @@ ________________________________________*/
   text-decoration: none;
   text-shadow: none;
   line-height: 2rem;
+  text-align: center;
 }
 
 [id*="open-accordion"]:after,
@@ -129,14 +130,14 @@ ________________________________________*/
   border-radius: 7px;
   opacity: 1;
   border-radius: 11px;
+  text-align: center;
 }
 
 .accordion span:target ~ .accordion-content {
   background: rgb(148, 123, 59);
   display: block;
   height: auto;
-  padding-bottom: 2%;
-  padding-top: 2%;
+  padding: 2vh 2vw 2vh 2vw;
 }
 
 .accordion span:target ~ [id*="close-accordion"] {
