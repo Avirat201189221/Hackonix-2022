@@ -34,14 +34,20 @@ nav {
 
 .Question-Container {
   position: relative;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   padding: 0;
 }
 
 .acc {
-  font-size: 170%;
+  font-size: 2rem;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 450px) {
+  .acc {
+    font-size: 1rem;
+  }
 }
 
 /*_________________  Accordion

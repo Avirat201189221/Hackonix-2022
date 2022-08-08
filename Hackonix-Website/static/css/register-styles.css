@@ -54,8 +54,12 @@ body {
   content: "";
   position: absolute;
   height: 3.5px;
-  width: 30px;
-  background: linear-gradient(135deg, var(--main-blue), var(--main-purple));
+  width: 165px;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(15, 15, 47, 1) 100%
+  );
   left: 0;
   bottom: 0;
 }

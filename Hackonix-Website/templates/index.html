@@ -110,9 +110,9 @@
             <!-- End center Logo -->
 
             <div class="mu-hero-featured-content">
-              <div data-aos="fade-up" data-aos-duration="1800">
+              {% comment %} <div data-aos="fade-up" data-aos-duration="1800">
                 <h2>Website Tagline</h2>
-              </div>
+              </div> {% endcomment %}
               <div data-aos="fade-up" data-aos-duration="1500">
                 <p class="mu-event-date-line">27-28 August 2022</p>
               </div>
@@ -232,15 +232,12 @@
                         <div class="details">
                           <h1>I'm the first Box</h1>
                           <p class="carousel-para">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Integer lacinia dui lectus. Donec scelerisque ipsum
-                            diam, ac mattis orci pellentesque eget.
                           </p>
                           <button class="carousel-btn">Check Now</button>
                         </div>
 
                         <div class="illustration">
-                          <div class="inner"></div>
+                          {% comment %} <div class="inner"></div> {% endcomment %}
                         </div>
                       </div>
 
@@ -250,15 +247,12 @@
                         <div class="details">
                           <h1>I'm the second Box</h1>
                           <p class="carousel-para">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Integer lacinia dui lectus. Donec scelerisque ipsum
-                            diam, ac mattis orci pellentesque eget.
                           </p>
                           <button class="carousel-btn">Check Now</button>
                         </div>
 
                         <div class="illustration">
-                          <div class="inner"></div>
+                          {% comment %} <div class="inner"></div> {% endcomment %}
                         </div>
                       </div>
 
@@ -267,15 +261,12 @@
                         <div class="details">
                           <h1>I'm the third Box</h1>
                           <p class="carousel-para">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Integer lacinia dui lectus. Donec scelerisque ipsum
-                            diam, ac mattis orci pellentesque eget.
                           </p>
                           <button class="carousel-btn">Check Now</button>
                         </div>
 
                         <div class="illustration">
-                          <div class="inner"></div>
+                          {% comment %} <div class="inner"></div> {% endcomment %}
                         </div>
                       </div>
 
@@ -284,15 +275,12 @@
                         <div class="details">
                           <h1>I'm the fourth Box</h1>
                           <p class="carousel-para">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Integer lacinia dui lectus. Donec scelerisque ipsum
-                            diam, ac mattis orci pellentesque eget.
                           </p>
                           <button class="carousel-btn">Check Now</button>
                         </div>
 
                         <div class="illustration">
-                          <div class="inner"></div>
+                          {% comment %} <div class="inner"></div> {% endcomment %}
                         </div>
                       </div>
 
@@ -301,15 +289,13 @@
                         <div class="details">
                           <h1>I'm the fifth Box</h1>
                           <p class="carousel-para">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Integer lacinia dui lectus. Donec scelerisque ipsum
-                            diam, ac mattis orci pellentesque eget.
+
                           </p>
                           <button class="carousel-btn">Check Now</button>
                         </div>
 
                         <div class="illustration">
-                          <div class="inner"></div>
+                          {% comment %} <div class="inner"></div> {% endcomment %}
                         </div>
                       </div>
 
@@ -325,13 +311,14 @@
                       <path d="M45.5,0,91,56.9,48.452,24.068,0,56.9Z" transform="translate(56.898) rotate(90)"
                         fill="#fff" />
                     </svg>
-                    <div class="trail">
-                      <div class="box1 active">1</div>
-                      <div class="box2">2</div>
-                      <div class="box3">3</div>
-                      <div class="box4">4</div>
-                      <div class="box5">5</div>
-                    </div>
+                      <div class="trail">
+                      <div class="box1 active"></div>
+                      <div class="box2"></div>
+                      <div class="box3"></div>
+                      <div class="box4"></div>
+                      <div class="box5"></div>
+                      {% comment %} <div class="box5">5</div> {% endcomment %}
+                    </div> 
                   </div>
 
                 </div>
@@ -721,10 +708,10 @@
               <span class="target-fix" id="accordion1"></span>
 
               <!-- Link to open accordion, hidden when open -->
-              <a href="#accordion1" id="open-accordion1" title="open">What is a Hackathon?</a>
+              <a href="#accordion1" id="open-accordion1" title="open"><p class="acc-text">What is a Hackathon?</p></a>
 
               <!-- Link to close accordion, hidden when closed -->
-              <a href="#accordion" id="close-accordion1" title="close">What is a Hackathon?</a>
+              <a href="#accordion" id="close-accordion1" title="close"><p class="acc-text">What is a Hackathon?</p></a>
 
               <!-- Accorion content goes in this div -->
               <div class="accordion-content">
