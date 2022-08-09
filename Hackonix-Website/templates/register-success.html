@@ -10,20 +10,28 @@
       rel="stylesheet"
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
-      
-      {% comment %} Dense Font {% endcomment %}
-      <style>
-        @font-face {
-          font-family: "Dense";
-          src: url("{%static 'fonts/Dense-Regular.otf' %}") format("opentype");
-        }
-      </style>
+    />
 
-
+    {% comment %} Dense Font {% endcomment %} {% comment %}
+    <style>
+      @font-face {
+        font-family: "Dense";
+        src: url("{%static 'fonts/Dense-Regular.otf' %}") format("opentype");
+      }
+    </style>
+    {% endcomment %}
   </head>
   <body>
+    <div class="bg-img">
+      <img
+        src="{%static 'images/phoenix-background.png' %}"
+        style="width: 100%; z-index: -1000"
+      />
+    </div>
+    {% comment %}
     <h1>Your Registration Has Been A Success!</h1>
     <h1>Thank you for registering Team {{team_name}}</h1>
+    {% endcomment %}
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
