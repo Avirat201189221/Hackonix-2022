@@ -433,7 +433,7 @@ img {
 .mu-hero-register-button button {
   background-color: rgb(0, 0, 0);
   color: azure;
-  padding: 1rem 3rem;
+  padding: 1rem 1.75rem;
 
   display: inline-block;
   margin-top: 10px;
@@ -1836,8 +1836,8 @@ img {
 
 @media (max-width: 480px) {
   .phoenix-back {
-    top: 10%;
-    height: 130vw;
+    top: 7%;
+    height: 170vw;
   }
 
   img.center {
@@ -1869,7 +1869,7 @@ img {
   }
 
   .mu-event-date-line {
-    font-size: 1.65rem;
+    font-size: 2.5rem;
   }
 
   .mu-event-counter-area {
