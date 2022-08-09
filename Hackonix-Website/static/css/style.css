@@ -1290,7 +1290,7 @@ img {
 }
 .rlbk {
   padding: 5rem 0rem;
-  max-width: 55%;
+  max-width: 65%;
   margin: auto;
 }
 .rules {
@@ -2137,5 +2137,17 @@ img {
 @media screen and (max-width: 450px) {
   .navbar-brand img {
     width: 3rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .ruleno {
+    flex-basis: 25%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .ruleno {
+    flex-basis: 12%;
   }
 }
