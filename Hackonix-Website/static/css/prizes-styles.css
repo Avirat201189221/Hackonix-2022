@@ -24,7 +24,7 @@
   );
 }
 .prizes-img img {
-  margin-top: 0.25rem;
+  margin-top: 1rem;
 }
 @media screen and (max-width: 430px) {
   .prizes-flex {

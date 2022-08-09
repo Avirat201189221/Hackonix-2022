@@ -83,12 +83,16 @@ ________________________________________*/
 
 .accordion a {
   color: #fff;
-  font-weight: normal;
+  font-weight: bold;
   padding: 2vh 2vw 2vh 2vw;
   text-decoration: none;
   text-shadow: none;
   line-height: 2rem;
   text-align: center;
+}
+
+.acc-text {
+  margin: 0px;
 }
 
 [id*="open-accordion"]:after,
