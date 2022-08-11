@@ -29,6 +29,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['hackonix.herokuapp.com', '*']
 
+CSRF_TRUSTED_ORIGINS = ['hackonix.herokuapp.com']
+
 
 # Application definition
 
@@ -126,7 +128,7 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-#Added Manually
+# Added Manually
 STATICFILES_DIRS = [
     BASE_DIR / "static",
     # '/var/www/static/',
