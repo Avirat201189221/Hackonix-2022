@@ -138,7 +138,7 @@ h6 {
 }
 
 .nav-link {
-  font-size: 2.5em;
+  font-size: 2rem;
   margin: 0.5rem;
   color: #d1d2d2;
   font-weight: 700;
@@ -151,6 +151,18 @@ h6 {
   border-radius: 1.75rem;
   color: white;
 }
+
+.nav-empty-space {
+  opacity: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav-empty-space {
+    opacity: 0;
+    font-size: 0.25rem;
+  }
+}
+
 button:focus {
   outline: none;
   box-shadow: none;
@@ -2050,8 +2062,8 @@ img {
 
 @media screen and (min-width: 800px) {
   .mu-about-left img {
-    height: 300px;
-    margin-top: 7rem;
+    height: 234px;
+    margin-top: 10rem;
   }
 }
 
@@ -2157,10 +2169,22 @@ img {
   .ruleno {
     flex-basis: 25%;
   }
+  .nav-link {
+    font-size: 1.5rem;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+  }
 }
 
 @media screen and (min-width: 1300px) {
   .ruleno {
     flex-basis: 12%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-link {
+    font-size: 2rem;
   }
 }
