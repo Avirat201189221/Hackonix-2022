@@ -29,7 +29,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['hackonix.herokuapp.com', '*']
 
-CSRF_TRUSTED_ORIGINS = ['http://hackonix.herokuapp.com']
+CSRF_TRUSTED_ORIGINS = ['http://hackonix.herokuapp.com',
+                        'https://hackonix.herokuapp.com']
 
 
 # Application definition
