@@ -70,24 +70,46 @@
     <!-- Start menu  -->
     <nav class="navbar navbar-expand-lg mr-auto">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="{%static 'images/Hackonix-gold-O.png' %}" class="hackonix-o"></a>
+        {% comment %} <a class="navbar-brand" href="#"><img src="{%static 'images/Hackonix-gold-O.png' %}" class="hackonix-o"></a> {% endcomment %}
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link" href="#mu-about">About</a>
-            {% comment %} <a class="nav-link" href="#mu-tracks">tracks</a> {% endcomment %}
-            <a class="nav-link" href="#mu-sponsors">Sponsors</a>
-            <a class="nav-link" href="#rules">Rulebook</a>
-            <a class="nav-link" href="#mu-prizes">Prizes</a>
-            <a class="nav-link" href="#timeline">Timeline</a>
-            <a class="nav-link" href="#mu-faq">FAQ</a>
-            <a class="nav-link" href="#mu-oc"> OC & EC </a>
-            <a class="nav-link" href="#mu-contact">Contact
-            <a class="nav-empty-space" href="#">Empty</a>
-            </a>
+            <div class="nav-link-flex">
+              <a class="nav-link" href="#mu-about">About</a>
+              <span class="ball-animation"></span>
+            </div>
+            <div class="nav-link-flex">
+              <a class="nav-link" href="#mu-sponsors">Sponsors</a>
+              <span class="ball-animation"></span>
+            </div>
+            <div class="nav-link-flex">
+              <a class="nav-link" href="#rules">Rulebook</a>
+              <span class="ball-animation"></span>
+            </div>
+            <div class="nav-link-flex">
+              <a class="nav-link" href="#mu-prizes">Prizes</a>
+              <span class="ball-animation"></span>
+            </div>
+            <div class="nav-link-flex">
+              <a class="nav-link" href="#timeline">Timeline</a>
+              <span class="ball-animation"></span>
+            </div>
+            <div class="nav-link-flex">
+              <a class="nav-link" href="#mu-faq">FAQ</a>
+              <span class="ball-animation"></span>
+            </div>
+            <div class="nav-link-flex">
+              <a class="nav-link" href="#mu-oc">Our Team</a>
+              <span class="ball-animation"></span>
+            </div>
+            <div class="nav-link-flex">
+              <a class="nav-link" href="#mu-contact">Contact</a>
+              <span class="ball-animation"></span>
+            </div>
+              <a class="nav-empty-space" href="#">Empty</a>
           </div>
         </div>
       </div>
@@ -95,7 +117,57 @@
     <!-- End menu -->
 
     <div class="mu-hero-overlay">
-      <img src="{%static 'images/phoenix-back.jpg' %}" class="phoenix-back" loading="lazy">
+      {% comment %} <img src="{%static 'images/phoenix-back.jpg' %}" class="phoenix-back" loading="lazy"> {% endcomment %}
+
+      {% comment %} Wings Animation {% endcomment %}
+      <div class="wings-container">
+        <div class='wing'>
+          <div class='feather'></div>
+          <div class='feather'></div>
+          <div class='feather'></div>
+          <div class='feather'></div>
+          <div class='feather'></div>
+          <div class='feather'></div>
+          <div class='feather'></div>
+          <div class='feather'></div>
+          <div class='feather'></div>
+          <div class='feather'></div>
+          <div class='feather'></div>
+          <div class='feather'></div>
+          <div class='feather'></div>
+          <div class='feather'></div>
+          <div class='feather'></div>
+          <div class='feather'></div>
+          <div class='feather'></div>
+          <div class='feather'></div>
+          <div class='feather'></div>
+          <div class='feather'></div>
+        </div>
+        <div class='wing'>
+          <div class='feather'></div>
+          <div class='feather'></div>
+          <div class='feather'></div>
+          <div class='feather'></div>
+          <div class='feather'></div>
+          <div class='feather'></div>
+          <div class='feather'></div>
+          <div class='feather'></div>
+          <div class='feather'></div>
+          <div class='feather'></div>
+          <div class='feather'></div>
+          <div class='feather'></div>
+          <div class='feather'></div>
+          <div class='feather'></div>
+          <div class='feather'></div>
+          <div class='feather'></div>
+          <div class='feather'></div>
+          <div class='feather'></div>
+          <div class='feather'></div>
+          <div class='feather'></div>
+        </div>
+      </div>
+
+      {% comment %} End {% endcomment %}
       <div class="container">
         <div class="mu-hero-area">
 
@@ -171,11 +243,11 @@
                     <p class="about-text">ISTE is the abode to a passionate community that believes in harnessing the power of technology to transform teaching and learning,accelerate innovation and solve tough problems in education.</p>
 
                     <p class="about-text">Over the course of one exciting weekend, people from a range of disciplines
-                      will come together in teams to try and solve a real world medical problem.</p>
+                      will come together in teams to try and solve real world problems.</p>
 
 
 
-                    <p class="about-text">Prizes to be announced soon! Lorem ipsum dolor </p>
+                    <p class="about-text">Prizes to be announced soon!</p>
                   </div>
                 </div>
               </div>
@@ -483,11 +555,11 @@
 
     <!-- Start Schedule  -->
     <section id="timeline" class="timeline">
-      <div class="timeline-container">
+      {% comment %} <div class="timeline-container">{% endcomment %}
         <center>
           <h2 class="timeline-header">Timeline</h2>
         </center>
-        <ul>
+        {% comment %} <ul>
           <li>
             <div>
               <time>(11:00 AM)</time><strong> 27th August </strong><br>Inauguration
@@ -528,7 +600,30 @@
               <time>(5:00 PM)</time><strong>28th August</strong><br>Closing Ceremony
             </div>
           </li>
-        </ul>
+        </ul> {% endcomment %}
+      {% comment %} </div>  {% endcomment %}
+      <div class="timeline-container">
+        <div class="swiper-container-wrapper swiper-container-wrapper--timeline">
+          <!-- Timeline -->
+          <ul class="swiper-pagination-custom">
+            <li class='swiper-pagination-switch first active'><span class='switch-title'>1911</span></li>
+            <li class='swiper-pagination-switch'><span class='switch-title'>1970</span></li>
+            <li class='swiper-pagination-switch'><span class='switch-title'>2021</span></li>
+            <li class='swiper-pagination-switch last'><span class='switch-title'>3000</span></li>
+          </ul>
+          <!-- Progressbar -->
+          <div class="swiper-pagination swiper-pagination-progressbar swiper-pagination-horizontal"></div>
+          <!-- Swiper -->
+          <div class="swiper swiper-container swiper-container--timeline">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><span class="title">Swiper Timeline Progressbar</span></div>
+              <div class="swiper-slide"><span class="title">Title 2</span></div>
+              <div class="swiper-slide"><span class="title">Title 3</span></div>
+              <div class="swiper-slide"><span class="title">Title 4</span></div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- End Schedule -->
@@ -1133,7 +1228,7 @@
     </section>
 
     <section id="mu-ec">
-      <center><h2 class="oc-title" style="font-size:6rem;">Executive Commitee</h2></center>
+      {% comment %} <center><h2 class="oc-title" style="font-size:6rem;">Executive Commitee</h2></center> {% endcomment %}
       {% comment %} Card 1 {% endcomment %}
     <div class="card-section">
       <div class="card-grid">
