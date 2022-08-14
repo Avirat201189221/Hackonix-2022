@@ -35,7 +35,7 @@ $(document).ready(function () {
   var mySwiper = new Swiper(".swiper", {
     autoHeight: true,
     autoplay: {
-      delay: 5000,
+      delay: 100_000_000_000,
       disableOnInteraction: false,
     },
     speed: 500,
@@ -50,7 +50,7 @@ $(document).ready(function () {
     },
     loop: false,
     effect: "slide",
-    spaceBetween: 30,
+    spaceBetween: 0,
     on: {
       init: function () {
         $(".swiper-pagination-custom .swiper-pagination-switch").removeClass(

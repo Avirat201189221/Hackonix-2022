@@ -131,6 +131,10 @@ h6 {
 
 /* Wings Animation */
 
+.wings-container {
+  max-width: 100px;
+}
+
 .wing {
   position: absolute;
   top: 50%;
@@ -504,6 +508,14 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media screen and (max-width: 760px) {
+  .nav-link-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .ball-animation {
