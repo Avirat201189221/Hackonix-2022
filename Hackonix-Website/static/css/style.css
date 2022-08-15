@@ -52,6 +52,8 @@ Version: 1.0
       format("svg");
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
 :root {
   --lg1: 0deg, rgba(0, 0, 0, 1) 0%, rgba(60, 57, 57, 1) 29%,
     rgba(72, 69, 69, 1) 35%, rgba(84, 81, 81, 1) 41%, rgba(185, 177, 177, 1) 90%,
@@ -853,7 +855,6 @@ img {
   background-color: rgb(0, 0, 0);
   color: azure;
   padding: 1rem 1.75rem;
-
   display: inline-block;
   margin-top: 10px;
   font-weight: 600;
@@ -873,6 +874,7 @@ img {
   margin: 0.25rem;
   color: azure;
   font-size: 1rem;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
 .mu-event-counter-area {
@@ -1995,6 +1997,7 @@ img {
     border-radius: 3rem;
   }
   .mu-hero-register-button p {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
     font-size: 1.75rem;
   }
 }
