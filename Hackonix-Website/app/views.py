@@ -84,3 +84,7 @@ def register(request):
 # def success(request):
 
 #     return render(request,"register-success.html")
+
+def allSponsors(request):
+
+    return render(request,"all-sponsors.html")
