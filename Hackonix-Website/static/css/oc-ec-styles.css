@@ -150,14 +150,14 @@
 }
 
 /* ICON STYLES */
-/* .icons .fa {
+.icons .fa {
   opacity: 0;
   transition: opacity 1s;
 }
 
 .icons .a {
   opacity: 0;
-} */
+}
 
 .icons {
   position: absolute;
