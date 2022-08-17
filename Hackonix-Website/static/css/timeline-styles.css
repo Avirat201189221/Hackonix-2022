@@ -201,7 +201,13 @@ body {
 .timeline-container {
   overflow: hidden;
 }
-
+.timeline-header {
+  font-family: "GT Flexa", Helvetica, sans-serif;
+  letter-spacing: 5px;
+  font-size: 10rem;
+  font-weight: bold;
+  margin-bottom: 4rem;
+}
 .swiper-container-wrapper--timeline .swiper-slide {
   display: flex;
   /* background: #fff; */

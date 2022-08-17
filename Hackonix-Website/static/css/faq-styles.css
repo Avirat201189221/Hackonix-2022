@@ -20,10 +20,11 @@
 }
 
 .faq-title {
-  font-family: "Dense", "Mechanismo", sans-serif;
-  font-size: 6rem;
-  color: white;
-  text-align: center;
+  font-family: "GT Flexa", Helvetica, sans-serif;
+  letter-spacing: 5px;
+  font-size: 10rem;
+  font-weight: bold;
+  margin-bottom: 4rem;
 }
 h4 {
   font-family: "Mechanismo", sans-serif;
@@ -70,8 +71,7 @@ ________________________________________*/
   line-height: 100%;
   height: 100%;
   display: block;
-  margin-top: 5vh;
-  margin-bottom: 0.5vh;
+  /* margin-bottom: 0.5vh; */
   position: relative;
   width: 100%;
   border-radius: 11px;

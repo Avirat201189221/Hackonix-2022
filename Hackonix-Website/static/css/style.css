@@ -126,7 +126,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Dense", "Montserrat", sans-serif;
+  font-family: "GT Flexa", Helvetica, sans-serif;
   font-weight: 700;
   margin-top: 0;
 }
@@ -840,15 +840,15 @@ img {
 .mu-event-date-line {
   /* background-color: rgb(0, 0, 0); */
   color: azure;
-  font-family: "Dense", Helvetica, sans-serif;
   padding: 1rem 3rem;
   display: inline-block;
   margin-top: 10px;
-  font-weight: 600;
-  border-color: gold;
   border-radius: 2rem;
-  border-width: 1rem;
-  font-size: 5rem;
+  font-family: "GT Flexa", Helvetica, sans-serif;
+  letter-spacing: 5px;
+  font-size: 12rem;
+  font-weight: bold;
+  margin-bottom: 4rem;
 }
 
 .mu-hero-register-button button {
@@ -1052,7 +1052,7 @@ img {
 .about-header {
   font-family: "GT Flexa", Helvetica, sans-serif;
   letter-spacing: 5px;
-  font-size: 12rem;
+  font-size: 10rem;
   font-weight: bold;
   margin-bottom: 4rem;
 }
@@ -1094,6 +1094,14 @@ img {
   float: left;
   width: 100%;
   margin-bottom: 10rem;
+}
+
+.sponsor-title {
+  font-family: "GT Flexa", Helvetica, sans-serif;
+  letter-spacing: 5px;
+  font-size: 10rem;
+  font-weight: bold;
+  margin-bottom: 4rem;
 }
 
 .mu-sponsors-area {
@@ -1144,7 +1152,17 @@ img {
   background-color: #262b30;
 } */
 .rlbk-body .rulebook-title {
-  font-size: 6rem;
+  font-family: "GT Flexa", Helvetica, sans-serif;
+  letter-spacing: 5px;
+  font-size: 10rem;
+  font-weight: bold;
+  margin-bottom: 4rem;
+}
+
+.pre-event-header {
+  letter-spacing: 5px;
+  font-size: 8rem;
+  font-weight: bold;
 }
 .headrl {
   list-style: circle;
@@ -1157,11 +1175,12 @@ img {
 .rules {
   list-style: none;
   text-align: left;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
   margin-bottom: 2.5rem;
   /* box styling */
-  display: flex;
+  display: grid;
   align-items: center;
   /* background: linear-gradient(
     0deg,
@@ -1169,8 +1188,10 @@ img {
     rgba(23, 32, 40, 0.5) 100%
   ); */
   border-radius: 2rem;
-  padding: 2rem;
+  padding: 1rem;
+  justify-items: center;
 }
+
 .ruleno {
   flex-basis: 12%;
 }
@@ -1432,8 +1453,7 @@ img {
 /* FOOTER */
 /*--------------------*/
 
-#mu-footer {
-  /* background:linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(60,57,57,1) 29%, rgba(72,69,69,1) 35%, rgba(84,81,81,1) 41%, rgba(185,177,177,1) 90%, rgba(205,197,197,1) 100%); */
+/* #mu-footer {
   display: inline;
   float: left;
   width: 100%;
@@ -1491,6 +1511,90 @@ img {
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
+} */
+
+.contact-container {
+  max-width: 1170px;
+  margin: auto;
+}
+.contact-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact-row ul {
+  list-style: none;
+}
+.footer {
+  background-color: #24262b;
+  padding: 70px 0;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/*responsive*/
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
 }
 
 /*--------------------*/

@@ -15,8 +15,11 @@
 } */
 
 .oc-title {
-  font-family: "Dense", Helvetica, sans-serif;
+  font-family: "GT Flexa", Helvetica, sans-serif;
+  letter-spacing: 5px;
+  font-size: 10rem;
   font-weight: bold;
+  margin-bottom: 4rem;
 }
 /* :root {
   
@@ -114,6 +117,9 @@
 .card:hover .icons .fa {
   opacity: 1;
 }
+.card:hover .icons .a {
+  opacity: 0;
+}
 
 .card-grid:hover > .card:not(:hover) .card__background {
   filter: brightness(1) saturate(0) contrast(1.2) blur(0px);
@@ -135,17 +141,23 @@
 
 .card__heading {
   color: var(--text-lighter);
-  font-size: 1.9rem;
+  font-size: 2rem;
   text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
   line-height: 1.4;
+  letter-spacing: 3px;
+  font-weight: bold;
   /* word-spacing: 100vw; */
 }
 
 /* ICON STYLES */
-.icons .fa {
+/* .icons .fa {
   opacity: 0;
   transition: opacity 1s;
 }
+
+.icons .a {
+  opacity: 0;
+} */
 
 .icons {
   position: absolute;
@@ -153,7 +165,7 @@
   color: #fff;
   height: 200px;
   top: -150px;
-  right: -158px;
+  right: -40px;
   width: 50px;
   z-index: 1;
   display: flex;
@@ -163,18 +175,20 @@
   border-top-left-radius: 0.75rem;
   border-bottom-left-radius: 0.75rem;
 }
-
+.icons .fa {
+  opacity: 1;
+}
+.icons .a {
+  color: white;
+}
+.icons {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(61, 61, 60, 0.4) 73%,
+    rgba(125, 124, 123, 0.4) 100%
+  );
+  opacity: 1;
+}
 @media screen and (max-width: 450px) {
-  .icons .fa {
-    opacity: 1;
-  }
-  .icons {
-    background: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0.4) 0%,
-      rgba(61, 61, 60, 0.4) 73%,
-      rgba(125, 124, 123, 0.4) 100%
-    );
-    opacity: 1;
-  }
 }
