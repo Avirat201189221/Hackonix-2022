@@ -175,20 +175,22 @@
   border-top-left-radius: 0.75rem;
   border-bottom-left-radius: 0.75rem;
 }
-.icons .fa {
-  opacity: 1;
-}
+
 .icons .a {
   color: white;
 }
-.icons {
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0.4) 0%,
-    rgba(61, 61, 60, 0.4) 73%,
-    rgba(125, 124, 123, 0.4) 100%
-  );
-  opacity: 1;
-}
+
 @media screen and (max-width: 450px) {
+  .icons {
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(61, 61, 60, 0.4) 73%,
+      rgba(125, 124, 123, 0.4) 100%
+    );
+    opacity: 1;
+  }
+  .icons .fa {
+    opacity: 1;
+  }
 }
