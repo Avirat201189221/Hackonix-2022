@@ -121,9 +121,9 @@
   opacity: 0;
 }
 
-.card-grid:hover > .card:not(:hover) .card__background {
+/* .card-grid:hover > .card:not(:hover) .card__background {
   filter: brightness(1) saturate(0) contrast(1.2) blur(0px);
-}
+} */
 
 .card__content {
   left: 0;
