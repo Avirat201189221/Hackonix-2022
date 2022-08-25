@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "GT Flexa";
+  font-family: "Roboto";
   src: url("//db.onlinewebfonts.com/t/a638be55afb1ed29ceb7ea7e288c2139.eot");
   src: url("//db.onlinewebfonts.com/t/a638be55afb1ed29ceb7ea7e288c2139.eot?#iefix")
       format("embedded-opentype"),
@@ -25,10 +25,10 @@
 }
 
 .sponsor-title {
-  font-size: 10rem;
+  font-size: 4rem;
   letter-spacing: 7px;
   color: azure;
-  font-family: "GT Flexa", Helvetica, sans-serif;
+  font-family: "Roboto", Helvetica, sans-serif;
 }
 
 @media screen and (max-width: 450px) {
