@@ -88,3 +88,7 @@ def register(request):
 def allSponsors(request):
 
     return render(request,"all-sponsors.html")
+
+def ourTeam(request):
+
+    return render(request,"our-team.html")

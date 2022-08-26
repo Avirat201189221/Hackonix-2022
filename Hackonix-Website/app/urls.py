@@ -8,4 +8,5 @@ urlpatterns = [
     path('register',views.register,name='registerpage'),
     # path('register-success',views.success,name='registersuccess'),
     path('all-sponsors',views.allSponsors,name='allsponsors'),
+    path('our-team',views.ourTeam,name='ourteam'),
 ]
