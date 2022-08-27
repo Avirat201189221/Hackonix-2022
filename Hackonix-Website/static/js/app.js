@@ -64,17 +64,4 @@ function onScroll() {
 	}
 }
 
-setInterval(onScroll, 1000)
-
-function checkHover() {
-	if (document.querySelector("div.mu-sponsors-content:hover") && window.innerWidth > 768) {
-		clearInterval(start);
-		start = undefined
-	} else {
-		if (!start) {
-			start = setInterval(() => slide("increase"), interval);
-		}
-	}
-}
-
-setInterval(checkHover, 1)
+setInterval(onScroll, 1000);

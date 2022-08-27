@@ -15,7 +15,18 @@ $(window).scroll(function () {
 });
 
 if (window.innerWidth < 600) {
-  $(".nav-link-flex").click(() => {
+  $(".nav-link").click(() => {
+    $(".navbar-toggler").toggleClass("collapsed");
+    $(".navbar-toggler")[0]["ariaExpanded"] = false;
+    // $(".navbar-collapse").toggleClass("collapsing");
+    // $(".navbar-collapse").toggleClass("collapse");
+    // setTimeout(() => {
+    //   $(".navbar-collapse").toggleClass("collapsing");
+    //   $(".navbar-collapse").toggleClass("collapse");
+    // }, 500);
+    $(".navbar-collapse.collapse").toggleClass("show");
+  });
+  $(".ball-animation").click(() => {
     $(".navbar-toggler").toggleClass("collapsed");
     $(".navbar-toggler")[0]["ariaExpanded"] = false;
     // $(".navbar-collapse").toggleClass("collapsing");
