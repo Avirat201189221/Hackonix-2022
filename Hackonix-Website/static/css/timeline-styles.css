@@ -320,7 +320,7 @@ body {
   .swiper-pagination-custom
   .swiper-pagination-switch.active
   .switch-title:after {
-  background: #000;
+  background: white;
   width: 25px;
   height: 25px;
   transition-delay: 0.4s;

@@ -15,7 +15,7 @@
 } */
 
 /* .oc-title {
-  font-family: "Roboto", Helvetica, sans-serif;
+  font-family: 'Roboto', Helvetica, sans-serif;
   letter-spacing: 0px;
   font-size: 4rem;
   font-weight: bold;
@@ -41,10 +41,10 @@
 /* body {
     height: 100%;
   } */
-.at-link{
+.at-link {
   color: white;
 }
-.at-link:hover{
+.at-link:hover {
   transform: scale(1.12);
 }
 .card-section {
@@ -134,8 +134,9 @@
   left: 0;
   padding: var(--spacing-l);
   padding-left: 10px;
+  padding-right: 0px;
   position: absolute;
-  top: 72%;
+  top: 76%;
 }
 
 .card__category {
@@ -170,8 +171,8 @@
   fill: #fff;
   color: #fff;
   height: 200px;
-  top: -150px;
-  right: -40px;
+  top: -200px;
+  right: -15px;
   width: 50px;
   z-index: 1;
   display: flex;

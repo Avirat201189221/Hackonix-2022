@@ -28,7 +28,7 @@
   font-size: 4rem;
   letter-spacing: 7px;
   color: azure;
-  font-family: "Roboto", Helvetica, sans-serif;
+  font-family: 'Roboto', Helvetica, sans-serif;
 }
 
 @media screen and (max-width: 450px) {

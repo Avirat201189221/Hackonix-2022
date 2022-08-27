@@ -20,7 +20,7 @@
 }
 
 .faq-title {
-  font-family: "Roboto", Helvetica, sans-serif;
+  font-family: 'Roboto', Helvetica, sans-serif;
   letter-spacing: 0px;
   font-size: 4rem;
   font-weight: bold;
@@ -138,7 +138,7 @@ ________________________________________*/
 }
 
 .accordion span:target ~ .accordion-content {
-  background: rgb(148, 123, 59);
+  background-color: #092645;;
   display: block;
   height: auto;
   padding: 2vh 2vw 2vh 2vw;

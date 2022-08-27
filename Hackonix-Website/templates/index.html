@@ -89,23 +89,23 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <div class="nav-link-flex">
-              <a class="nav-link" href="#mu-about">About</a>
+              <a class="nav-link" href="#about">About</a>
               <span class="ball-animation"></span>
             </div>
             <div class="nav-link-flex">
               <a class="nav-link" href="#mu-sponsors">Sponsors</a>
               <span class="ball-animation"></span>
             </div>
-            <div class="nav-link-flex">
+            {% comment %} <div class="nav-link-flex">
               <a class="nav-link" href="#rules">Rulebook</a>
               <span class="ball-animation"></span>
             </div>
             <div class="nav-link-flex">
               <a class="nav-link" href="#mu-prizes">Prizes</a>
               <span class="ball-animation"></span>
-            </div>
+            </div> {% endcomment %}
             <div class="nav-link-flex">
-              <a class="nav-link" href="#timeline">Timeline</a>
+              <a class="nav-link" href="#Timeline">Timeline</a>
               <span class="ball-animation"></span>
             </div>
             <div class="nav-link-flex">
@@ -189,7 +189,9 @@
       {% comment %} <div class="gradient-separator"
         style="height:0px; background: linear-gradient(0deg, rgba(33,33,33,1) 0%, rgba(38,43,48,1) 100%);">
       </div> {% endcomment %}
+
       <div class="container">
+        <section id="about"></section>
         <center>
           <h2 class="about-header">About Us</h2>
         </center>
@@ -454,7 +456,7 @@
     {% comment %} End {% endcomment %}
 
     {% comment %} Start Rulebook {% endcomment %}
-    <section id="mu-rb">
+    {% comment %} <section id="mu-rb">
       <div class="rlbk-body">
         <center>
           <h2 class="rulebook-title">Rulebook</h2>
@@ -504,11 +506,11 @@
           </section>
         </div>
       </div>
-    </section>
+    </section> {% endcomment %}
     {% comment %} End {% endcomment %}
 
     {% comment %} Start Prizes {% endcomment %}
-    <section id="mu-prizes" style="padding-bottom:10rem">
+    {% comment %} <section id="mu-prizes" style="padding-bottom:10rem">
       <div class="mu-prizes-area">
         <center>
           <h2 class="prizes-title">Prizes</h2>
@@ -567,7 +569,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> {% endcomment %}
     {% comment %} End {% endcomment %}
 
     <!-- Start Schedule  -->
@@ -634,13 +636,14 @@
           <div class="swiper swiper-container swiper-container--timeline">
             <div class="swiper-wrapper">
               <!-- Slides -->
-              <div class="swiper-slide" style="background-color: blueviolet;"><span class="s-title"
+              <section id="Timeline"></section>
+              <div class="swiper-slide" style=""><span class="s-title"
                   style="background-color: red;">Swiper Timeline
                   Progressbar</span></div>
-              <div class="swiper-slide" style="background-color: blueviolet;"><span class="s-title"
+              <div class="swiper-slide" style=""><span class="s-title"
                   style="background-color: red;">Swiper Timeline Progressbar
                   2</span></div>
-              <div class="swiper-slide" style="background-color: blueviolet;"><span class="s-title"
+              <div class="swiper-slide" style=""><span class="s-title"
                   style="background-color: red;">Swiper Timeline Progressbar
                   3</span></div>
             </div>
@@ -938,7 +941,8 @@
         textSample textSample textSample text</p>
       <section id="mu-oc"></section>
       <center>
-        <h2 class="oc-title" style="font-size:4rem;">Our Team</h2>
+        <h2 class="oc-title" style="font-size:4rem;margin-bottom:1rem;">Our Team</h2>
+        <a href="our-team" style="color:white;"><p class="at-link" style="transition:0.5s;">View All Members ></p></a>
       </center>
       {% comment %} Card 1 {% endcomment %}
       <div class="card-section">
@@ -1005,7 +1009,7 @@
             </div>
             <div class="card__content">
               {% comment %} <p class="card__category">Category</p> {% endcomment %}
-              <div class="icons" style="right:-82px">
+              <div class="icons" style="right:-70px">
                 <a href="https://www.instagram.com/diagangwar/" style="color:white;"><i class="fa fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/in/diya-gangwar-921a36237/" style="color:white;"><i
                     class="fa fa-linkedin"></i></a>
@@ -1023,7 +1027,7 @@
             </div>
             <div class="card__content">
               {% comment %} <p class="card__category">Category</p> {% endcomment %}
-              <div class="icons" style="right:-55px">
+              <div class="icons" style="right:-35px">
                 <a href="https://www.instagram.com/tanmay.exe/" style="color:white;"><i class="fa fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/in/tanmay-deshkar-0366ab22a" style="color:white;"><i
                     class="fa fa-linkedin"></i></a>
@@ -1041,7 +1045,7 @@
             </div>
             <div class="card__content">
               {% comment %} <p class="card__category">Category</p> {% endcomment %}
-              <div class="icons" style="right:-55px">
+              <div class="icons" style="right:-35px">
                 <a href="https://www.instagram.com/bhoomika_vrati/" style="color:white;"><i
                     class="fa fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/in/bhoomika-vrati-b3565622b" style="color:white;"><i
@@ -1060,7 +1064,7 @@
             </div>
             <div class="card__content">
               {% comment %} <p class="card__category">Category</p> {% endcomment %}
-              <div class="icons" style="right:-55px">
+              <div class="icons" style="right:-35px">
                 <a href="https://www.instagram.com/hardikjain1402/?hl=en" style="color:white;"><i
                     class="fa fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/in/hardik-jain-53007b21b" style="color:white;"><i
@@ -1079,7 +1083,7 @@
             </div>
             <div class="card__content">
               {% comment %} <p class="card__category">Category</p> {% endcomment %}
-              <div class="icons" style="right:-118px">
+              <div class="icons" style="right:-116px">
                 <a href="https://www.instagram.com/dj_6303/" style="color:white;"><i class="fa fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/in/dev-jalota-84434222a/" style="color:white;"><i
                     class="fa fa-linkedin"></i></a>
@@ -1115,7 +1119,7 @@
             </div>
             <div class="card__content">
               {% comment %} <p class="card__category">Category</p> {% endcomment %}
-              <div class="icons" style="right:-129px">
+              <div class="icons" style="right:-135px">
                 <a href="https://www.instagram.com/nehchal_k/" style="color:white;"><i class="fa fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/in/nehchal-kaur-272367246" style="color:white;"><i
                     class="fa fa-linkedin"></i></a>
@@ -1133,7 +1137,7 @@
             </div>
             <div class="card__content">
               {% comment %} <p class="card__category">Category</p> {% endcomment %}
-              <div class="icons" style="right:-119px">
+              <div class="icons" style="right:-124px">
                 <a href="https://www.instagram.com/batra_vishnu/" style="color:white;"><i
                     class="fa fa-instagram"></i></a>
                 <a href="https://linkedin.com/in/vishnu-batra-465089222" style="color:white;"><i
@@ -1153,7 +1157,7 @@
             </div>
             <div class="card__content">
               {% comment %} <p class="card__category">Category</p> {% endcomment %}
-              <div class="icons" style="right:-113px">
+              <div class="icons" style="right:-118px">
                 <a href="https://www.instagram.com/pranav.kataria24/" style="color:white;"><i
                     class="fa fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/in/pranav-kataria-8a7a67231" style="color:white;"><i
@@ -1172,7 +1176,7 @@
             </div>
             <div class="card__content">
               {% comment %} <p class="card__category">Category</p> {% endcomment %}
-              <div class="icons" style="right:-110px">
+              <div class="icons" style="right:-113px">
                 <a href="https://www.instagram.com/akritissbored/" style="color:white;"><i
                     class="fa fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/in/akriti-rai-51746722b" style="color:white;"><i
@@ -1190,7 +1194,7 @@
             <div class="card__background"
               style="background-image: url(https://raw.githubusercontent.com/Avirat201189221/Hackonix-2022/main/Hackonix-Website/static/images/our-team/OC_Sunali.jpg)">
             </div>
-            <div class="card__content" style="right:-105px">
+            <div class="card__content" style="right:-102px">
               {% comment %} <p class="card__category">Category</p> {% endcomment %}
               <div class="icons">
                 <a href="https://www.instagram.com/sunali_sharma_22/" style="color:white;"><i
@@ -1209,7 +1213,7 @@
             <div class="card__background"
               style="background-image: url(https://raw.githubusercontent.com/Avirat201189221/Hackonix-2022/main/Hackonix-Website/static/images/our-team/OC_Vedant_Gadodia.jpg)">
             </div>
-            <div class="card__content" style="right:-105px">
+            <div class="card__content" style="right:-102px">
               {% comment %} <p class="card__category">Category</p> {% endcomment %}
               <div class="icons">
                 <a href="https://www.instagram.com/vedant.gadodia/" style="color:white;"><i
@@ -1229,7 +1233,7 @@
             </div>
             <div class="card__content">
               {% comment %} <p class="card__category">Category</p> {% endcomment %}
-              <div class="icons" style="right:-75px">
+              <div class="icons" style="right:-67px">
                 <a href="https://www.instagram.com/psgill_03" style="color:white;"><i class="fa fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/in/paramdeepsinghgill/" style="color:white;"><i
                     class="fa fa-linkedin"></i></a>
@@ -1246,7 +1250,7 @@
             </div>
             <div class="card__content">
               {% comment %} <p class="card__category">Category</p> {% endcomment %}
-              <div class="icons" style="right:-118px">
+              <div class="icons" style="right:-122px">
                 <a href="https://www.instagram.com/avi.0603/" style="color:white;"><i class="fa fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/in/avirat-sharma-685133229/" style="color:white;"><i
                     class="fa fa-linkedin"></i></a>
@@ -1274,7 +1278,7 @@
             </div>
             <div class="card__content">
               {% comment %} <p class="card__category">Category</p> {% endcomment %}
-              <div class="icons" style="right:-36px">
+              <div class="icons" style="right:-17px">
                 <a href="https://www.instagram.com/gurmehar_sibal/" style="color:white;"><i
                     class="fa fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/in/gurmehar-kaur-sibal-04092002" style="color:white;"><i
@@ -1293,7 +1297,7 @@
             </div>
             <div class="card__content">
               {% comment %} <p class="card__category">Category</p> {% endcomment %}
-              <div class="icons" style="right:-110px">
+              <div class="icons" style="right:-112px">
                 <a href="https://www.instagram.com/himanshi.pahuja/" style="color:white;"><i
                     class="fa fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/in/himanshi-pahuja-938292201/" style="color:white;"><i
@@ -1312,7 +1316,7 @@
             </div>
             <div class="card__content">
               {% comment %} <p class="card__category">Category</p> {% endcomment %}
-              <div class="icons" style="right:-82px">
+              <div class="icons" style="right:-77px">
                 <a href="https://www.instagram.com/anshikajain204/" style="color:white;"><i
                     class="fa fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/in/anshika-jain-6a44581bb/" style="color:white;"><i
@@ -1349,7 +1353,7 @@
             </div>
             <div class="card__content">
               {% comment %} <p class="card__category">Category</p> {% endcomment %}
-              <div class="icons" style="right:-118px">
+              <div class="icons" style="right:-127px">
                 <a href="https://www.instagram.com/subhavbatra/" style="color:white;"><i
                     class="fa fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/in/subhav-batra-0269341a4/" style="color:white;"><i
@@ -1368,7 +1372,7 @@
             </div>
             <div class="card__content">
               {% comment %} <p class="card__category">Category</p> {% endcomment %}
-              <div class="icons" style="right:-118px">
+              <div class="icons" style="right:-122px">
                 <a href="https://www.instagram.com/mukul_108/" style="color:white;"><i class="fa fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/in/mukul-singhal-867186212" style="color:white;"><i
                     class="fa fa-linkedin"></i></a>
@@ -1439,7 +1443,7 @@
       </footer> {% endcomment %}
       <footer class="footer">
         <center>
-          <h2 class="contact-title" style="font-size:4rem;">Contact Us</h2>
+          {% comment %} <h2 class="contact-title" style="font-size:4rem;">Contact Us</h2> {% endcomment %}
         </center>
         <div class="container" style="border-radius:0rem">
           <div class="row">

@@ -15,6 +15,10 @@
   font-size: 3rem;
 }
 
+/* .sponsor-single{
+  border-style: solid;
+  border-radius: 10px;
+} */
 .sponsors-grid {
   display: grid;
 }
@@ -43,8 +47,11 @@
 .sponsor-image {
   height: 6rem;
   width: 11rem;
+  transition: 0.5s;
 }
-
+.sponsor-image:hover{
+  transform: scale(1.12);
+}
 @media screen and (max-width: 450px) {
   .sponsors-cards {
     width: 100%;
