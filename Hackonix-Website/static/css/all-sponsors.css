@@ -28,7 +28,7 @@
   font-size: 4rem;
   letter-spacing: 7px;
   color: azure;
-  font-family: 'Roboto', Helvetica, sans-serif;
+  font-family: "Roboto", Helvetica, sans-serif;
 }
 
 @media screen and (max-width: 450px) {
@@ -37,14 +37,14 @@
   }
 }
 
-/* Power-Sponsors */
+/* Platinum-Sponsors */
 
-.power-sponsors-grid {
+.platinum-sponsors-grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
 }
 
-.power-sponsors-grid > div {
+.platinum-sponsors-grid > div {
   /* background-color: hotpink; */
   display: flex;
 }
