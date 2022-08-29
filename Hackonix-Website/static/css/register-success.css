@@ -1,7 +1,10 @@
 .body {
   height: fit-content;
 }
-
-.bg-img img {
-  width: 100%;
+img{
+  width: 100vw;
+  height:100vh;
+  
 }
+
+
