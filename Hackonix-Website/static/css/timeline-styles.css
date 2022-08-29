@@ -211,10 +211,11 @@ body {
 .swiper-container-wrapper--timeline .swiper-slide {
   display: grid;
   /* background: #fff; */
-  min-height: 100px;
+  /* min-height: 100px; */
   border-radius: 10px;
   align-items: center;
   justify-content: center;
+  grid-gap:1.5rem;
   padding: 0;
 }
 .s-title {
@@ -230,9 +231,9 @@ body {
 }
 
 @media screen and (max-width: 450px) {
-  .swiper-container-wrapper--timeline .swiper-slide .s-title {
+  /* .swiper-container-wrapper--timeline .swiper-slide .s-title {
     font-size: 1rem;
-  }
+  } */
   .swiper-container-wrapper--timeline .swiper-slide {
     justify-content: end;
     align-items: flex-end;
