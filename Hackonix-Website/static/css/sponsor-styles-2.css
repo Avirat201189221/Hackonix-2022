@@ -23,6 +23,7 @@
 .sponsor-single {
   /* border-style: solid;
   border-radius: 10px; */
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,6 +31,9 @@
 .sponsors-grid {
   display: grid;
   grid-gap: 2rem;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .grid-platinum {
@@ -56,7 +60,7 @@
 }
 @media screen and (max-width: 450px) {
   .sponsors-cards {
-    width: 100%;
+    width: 90%;
   }
   .sponsors-head {
     display: flex;

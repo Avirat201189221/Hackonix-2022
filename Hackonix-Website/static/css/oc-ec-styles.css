@@ -63,6 +63,7 @@
   grid-row-gap: var(--spacing-l);
   max-width: var(--width-container);
   width: 100%;
+  justify-items: center;
 }
 
 @media (min-width: 540px) {
