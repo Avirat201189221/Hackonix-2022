@@ -215,7 +215,7 @@ body {
   border-radius: 10px;
   align-items: center;
   justify-content: center;
-  grid-gap:1.5rem;
+  grid-gap:1rem;
   padding: 0;
 }
 .s-title {
