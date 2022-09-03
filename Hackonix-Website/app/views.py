@@ -57,11 +57,11 @@ def register(request):
         # Condtional For Non-Thapar-Email
             for item in listOfEmails:
                 if len(item) != 0:
-                    if("@thapar.edu" not in item):
-                        messages.success(
-                            request, ("Please use your thapar email id"))
-                        return render(request, "register.html", {})
-                        break
+                    # if("@thapar.edu" not in item):
+                    messages.success(
+                        request, ("Please use your thapar email id"))
+                    return render(request, "register.html", {})
+                    break
 
         team.save()
         ###########################################################
