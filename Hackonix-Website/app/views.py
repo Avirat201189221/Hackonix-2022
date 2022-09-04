@@ -45,15 +45,15 @@ def register(request):
         team = HackathonTeam(team_name=teamName, leader_name=leaderName, leader_roll_no=leaderRollNo, leader_thapar_email=leaderEmail, leader_phone_number=leaderPhoneNumber, teammate1_name=teammate1Name, teammate1_roll_no=teammate1RollNo, teammate1_thapar_email=teammate1Email, teammate2_name=teammate2Name,
                              teammate2_roll_no=teammate2RollNo, teammate2_thapar_email=teammate2Email, teammate3_name=teammate3Name, teammate3_roll_no=teammate3RollNo, teammate3_thapar_email=teammate3Email, teammate4_name=teammate4Name, teammate4_roll_no=teammate4RollNo, teammate4_thapar_email=teammate4Email)
         # Conditionals for Data:
-        listOfMandatoryFields = [teamName, leaderName,
-                                 leaderRollNo, leaderEmail, leaderPhoneNumber]
-        listOfEmails = [leaderEmail, teammate1Email,
-                        teammate2Email, teammate3Email, teammate4Email]
+        # listOfMandatoryFields = [teamName, leaderName,
+        #                          leaderRollNo, leaderEmail, leaderPhoneNumber]
+        # listOfEmails = [leaderEmail, teammate1Email,
+        #                 teammate2Email, teammate3Email, teammate4Email]
         # Conditional For Empty Mandatory Fields
-        for item in listOfMandatoryFields:
-            if len(item) == 0:
-                messages.success(request, ("Mandatory Fields Left Blank"))
-                return render(request, "register.html", {})
+        # for item in listOfMandatoryFields:
+        #     if len(item) == 0:
+        #         messages.success(request, ("Mandatory Fields Left Blank"))
+        #         return render(request, "register.html", {})
         # Condtional For Non-Thapar-Email
             # for item in listOfEmails:
             #     if len(item) != 0:
