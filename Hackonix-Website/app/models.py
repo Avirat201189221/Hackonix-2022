@@ -10,9 +10,9 @@ class HackathonTeam(models.Model):
     leader_phone_number=models.CharField(max_length=12, blank=False)
 
     # Teammate 1
-    teammate1_name= models.CharField(max_length=22, blank=False)
-    teammate1_roll_no=models.CharField(max_length=9, blank=False)
-    teammate1_thapar_email=models.CharField(max_length=50,blank=False)
+    teammate1_name= models.CharField(max_length=22, default="", null=True, blank=True)
+    teammate1_roll_no=models.CharField(max_length=9,default="", null=True, blank=True)
+    teammate1_thapar_email=models.CharField(max_length=50,default="", null=True, blank=True)
 
     # Teammate 2
     teammate2_name= models.CharField(max_length=22, default="", null=True, blank=True)
