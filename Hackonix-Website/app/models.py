@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 class HackathonTeam(models.Model):
-    team_name=models.CharField(max_length=12, blank=False)
+    team_name=models.CharField(max_length=12,default="",null=True, blank=True)
     # Team Leader
     leader_name= models.CharField(max_length=22, blank=False)
     leader_roll_no=models.CharField(max_length=9, blank=False)
