@@ -1,5 +1,6 @@
 # Hackonix-2022
 This is the repository for the Hackonix Webiste
+bit.ly/hackonix
 
 # Activating Virtual Enviroment
 To activate the virtual enviroment venv use this command in your terminal:
