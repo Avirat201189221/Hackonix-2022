@@ -103,14 +103,18 @@
               <span class="ball-animation"></span>
             </div>
             <div class="nav-link-flex">
+              <a class="nav-link" href="#tracks">Tracks</a>
+              <span class="ball-animation"></span>
+            </div>
+            <div class="nav-link-flex">
               <a class="nav-link" href="#mu-sponsors">Sponsors</a>
               <span class="ball-animation"></span>
             </div>
             {% comment %} <div class="nav-link-flex">
               <a class="nav-link" href="#rules">Rulebook</a>
               <span class="ball-animation"></span>
-            </div>
-            <div class="nav-link-flex">
+            </div> {% endcomment %}
+            {% comment %} <div class="nav-link-flex">
               <a class="nav-link" href="#mu-prizes">Prizes</a>
               <span class="ball-animation"></span>
             </div> {% endcomment %}
@@ -280,16 +284,15 @@
     </section>
     <!-- End About -->
 
-     tracks
     <section id="tracks">
       <div class="heading">
-        <h1>Tracks</h1>
+        <center><h1 class="about-header" style="magin-bottom:10rem">Tracks</h1></center>
       </div>
       <div class="cards">
-        <div class="wrapper" data-aos="zoom-in-left"><i class="fas fa-link"></i><br><div style="font-size: 15px;">FIN-TECH</div></div>
+        <div class="wrapper" data-aos="zoom-in-left"><i class="fas fa-graduation-cap"></i><br><div style="font-size: 15px;">ED-TECH</div></div>
         <div class="wrapper" data-aos="zoom-in-up"><i class="fas fa-lightbulb "></i> <div style="font-size: 15px;">OPEN INNOVATION</div></div>
-        <div class="wrapper" data-aos="zoom-in-up"><i class="fas fa-graduation-cap"></i> <div style="font-size: 15px;">EDUCATION</div></div>
-        <div class="wrapper" data-aos="zoom-in-right"><i class="fas fa-briefcase-medical"></i> <div style="font-size: 15px;">HEALTH</div></div>
+        <div class="wrapper" data-aos="zoom-in-up"><img src="{%static 'images/wheat.png' %}"><div style="font-size: 15px;">AGRICULTURE</div></div>
+        <div class="wrapper" data-aos="zoom-in-right"><i class="fas fa-briefcase-medical"></i> <div style="font-size: 15px;">HEALTHCARE</div></div>
       </div>
     </section> 
     {% comment %} end {% endcomment %}

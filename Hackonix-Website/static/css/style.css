@@ -476,6 +476,8 @@ img {
   display: block;
   margin-right: auto;
   margin-left: auto;
+  height: 115px;
+  margin-bottom: 20px;
 }
 
 .mu-menu-btn {
